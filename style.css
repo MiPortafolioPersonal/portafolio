@@ -350,7 +350,7 @@ h1 {
 
 /* Iconos personalizados con imágenes de fondo */
 #icon-ionic {
-    background-image: url('../img/icon_ionic.svg');
+    background-image: url('./img/icon_ionic.svg');
     width: 20px;
     height: 20px;
     background-size: contain;
@@ -358,11 +358,11 @@ h1 {
 }
 
 .skill-bubble:hover #icon-ionic {
-    background-image: url('./../img/ionic_blue.svg');
+    background-image: url('./img/ionic_blue.svg');
 }
 
 #icon-mysql {
-    background-image: url('../img/icon_mysql.svg');
+    background-image: url('./img/icon_mysql.svg');
     width: 30px;
     height: 30px;
     background-size: contain;
@@ -371,11 +371,11 @@ h1 {
 }
 
 .skill-category-item:hover #icon-mysql {
-    background-image: url('../img/icon_mysql_color.svg');
+    background-image: url('./img/icon_mysql_color.svg');
 }
 
 #icon-vscode {
-    background-image: url('../img/icon_vs.svg');
+    background-image: url('./img/icon_vs.svg');
     width: 22px;
     height: 22px;
     background-size: contain;
@@ -383,11 +383,11 @@ h1 {
 }
 
 .skill-bubble:hover #icon-vscode {
-    background-image: url('../img/icon_vs_blue.svg');
+    background-image: url('./img/icon_vs_blue.svg');
 }
 
 #icon-canva {
-    background-image: url('../img/icon_canva.svg');
+    background-image: url('./img/icon_canva.svg');
     width: 22px;
     height: 22px;
     background-size: contain;
@@ -395,7 +395,7 @@ h1 {
 }
 
 .skill-bubble:hover #icon-canva {
-    background-image: url('../img/icon_canva_color.svg');
+    background-image: url('./img/icon_canva_color.svg');
 }
 
 /* Utilidad para puntero */
