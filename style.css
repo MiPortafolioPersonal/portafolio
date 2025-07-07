@@ -202,7 +202,7 @@ i.primary {
     width: 55vw;
     height: 100vh;
     overflow-y: auto;
-    background: #b2a4ff;
+    background: #dcdcdc;
     transform: translateX(-100%);
     transition: transform 0.5s cubic-bezier(0.77, 0, 0.18, 1);
     z-index: 10;
@@ -250,7 +250,7 @@ i.primary {
 .section-title {
     font-weight: 600;
     padding: 0 15px;
-    background-color: #b2a4ff;
+    background-color: #dcdcdc;
     z-index: 1;
     font-size: 1.8rem; /* Ajuste de tamaño de fuente */
 }
@@ -283,7 +283,7 @@ i.primary {
 }
 
 .skill-bubble {
-    background-color: #dcdcdc87;
+    background-color: #b2a4ff;
     padding: 12px 25px;
     border-radius: 9999px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -296,7 +296,8 @@ i.primary {
 
 .skill-bubble:hover,
 .skill-bubble:focus {
-    background-color: #d6d6d6;
+    background-color: #1d2b53;
+    color: #dcdcdc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     outline: none;
     transform: translateY(-2px);
@@ -440,7 +441,7 @@ i.primary {
 }
 
 .description-section {
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: justify;
     margin-bottom: 5rem;
 }
@@ -559,7 +560,7 @@ i.primary {
 
 /* Botones y badges */
 .download-cv-button {
-    background-color: #dcdcdc;
+    background-color: #b2a4ff;
     color: #1d2b53;
     padding: 5px 15px;
     border-radius: 30px;
@@ -576,15 +577,26 @@ i.primary {
 .download-cv-button:hover,
 .download-cv-button:focus {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: #1d2b53;
-    border: 1px solid #1d2b53;
-    background-color: #b2a4ff;
+    color: #dcdcdc;
+    background-color: #1d2b53;
     outline: none;
 }
 
 .download-cv-button i {
     margin-left: 10px;
     font-size: 1.3rem;
+}
+
+.icon_cv {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d2b53;
+    color: #dcdcdc;
+    font-size: 0.8rem; /* Ajustado para mejor visibilidad */
 }
 
 .message-box {
@@ -607,17 +619,6 @@ i.primary {
     pointer-events: auto; /* Interactuable cuando está visible */
 }
 
-.icon_cv {
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #1d2b53;
-    color: #dcdcdc;
-    font-size: 0.8rem; /* Ajustado para mejor visibilidad */
-}
 
 /* Proyectos */
 .card-img-top {
