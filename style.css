@@ -112,7 +112,7 @@ body {
     width: 250px; /* Tamaño más adecuado para móvil */
     height: 250px; /* Tamaño más adecuado para móvil */
     border-radius: 50%;
-    background: linear-gradient(135deg, #b2a4ff, #b2a4ff);
+    background: #b2a4ff;
     padding: 5px;
     display: flex;
     justify-content: center;
