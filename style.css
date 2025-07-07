@@ -1,4 +1,4 @@
-/* Añadido para asegurar un modelo de caja consistente en todos los elementos */
+/* Restablecimiento básico y modelo de caja */
 *,
 *::before,
 *::after {
@@ -10,43 +10,39 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    /* Ensure html and body take full height */
-    /* Añadido para prevenir cualquier desbordamiento horizontal a nivel de documento */
-    overflow-x: hidden;
-    /* Asegura que el body pueda desplazarse verticalmente si el contenido excede la altura */
-    overflow-y: auto;
+    overflow-x: hidden; /* Previene el desbordamiento horizontal */
+    overflow-y: auto; /* Permite el desplazamiento vertical */
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    background-color: #F3F4F6;
-    /* Eliminado display: flex y propiedades de centrado global para permitir el flujo normal de la página en móvil/tablet */
-    min-height: 100vh;
-    /* Asegura que el body ocupe al menos el 100% de la altura del viewport */
+    font-family: 'Inter', sans-serif; /* Fuente principal */
+    background-color: #F3F4F6; /* Color de fondo general */
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos el 100% de la altura del viewport */
+    
 }
 
+/* Colores de la paleta */
 .primary {
-    color: #dcdcdc;
+    color: #dcdcdc; /* Color principal (claro) */
 }
 
 .ventana-primary-bg {
-    background: #dcdcdc !important;
-    /* color de fondo deseado */
+    background: #dcdcdc !important; /* Fondo para ventanas (claro) */
 }
 
 .secondary {
-    color: #1d2b53 !important;
+    color: #1d2b53 !important; /* Color secundario (oscuro) */
 }
 
 .tertiary {
-    color: #b2a4ff;
+    color: #b2a4ff; /* Color terciario (acento) */
 }
 
 .border-style {
-    border-bottom: 1px solid #1d2b53;
+    border-bottom: 1px solid #1d2b53; /* Estilo de borde */
 }
 
-/* Utilidades de margen personalizadas */
+/* Utilidades de margen personalizadas (para escritorio) */
 .ml-6rem {
     margin-left: 6rem;
 }
@@ -59,49 +55,62 @@ body {
     margin-right: 3rem;
 }
 
+/* Tamaño de fuente personalizado */
 .fs-2 {
     font-size: 2.5rem !important;
 }
 
-/* Container principal */
+/* Contenedor principal de la aplicación */
 .container-custom {
     background-color: #dcdcdc;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     width: 100vw;
     max-width: 100vw;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Por defecto en columna para móviles */
     min-height: 100vh;
-    /* Asegura que siempre ocupe al menos la altura del viewport */
+    overflow: hidden; /* Oculta el overflow para el layout principal */
 }
 
+/* Barra lateral (Sidebar) */
 .sidebar {
     background-color: #dcdcdc;
-    padding: 2rem 8rem;
+    padding: 2rem 1rem; /* Ajustado para mejor responsividad */
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     z-index: 10;
+    flex-shrink: 0; /* Evita que la barra lateral se encoja */
+    width: 100%; /* Ocupa todo el ancho en móvil */
 }
 
+.sidebar span {
+    text-shadow:
+        -1px -1px 0 #1d2b53, /* Arriba izquierda */
+        1px -1px 0 #1d2b53,  /* Arriba derecha */
+        -1px 1px 0 #1d2b53,  /* Abajo izquierda */
+        1px 1px 0 #1d2b53;   /* Abajo derecha */
+}
+
+/* Contenido principal */
 .main-content {
     background-color: #1d2b53;
     flex-grow: 1;
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    /* Ajustado a flex-start por defecto para el flujo de contenido */
     justify-content: flex-start;
     color: #F9FAFB;
+    overflow-y: auto; /* Permite el scroll interno */
+    width: 100%; /* Ocupa todo el ancho en móvil */
 }
 
 /* Imagen de perfil principal */
 .profile-image-wrapper {
-    /* Centrado por defecto, se ajustará para escritorio en media query */
-    margin: 0 auto 1.5rem auto;
-    width: 400px;
-    height: 400px;
+    margin: 0 auto 1.5rem auto; /* Centrado y margen inferior */
+    width: 250px; /* Tamaño más adecuado para móvil */
+    height: 250px; /* Tamaño más adecuado para móvil */
     border-radius: 50%;
     background: linear-gradient(135deg, #A78BFA, #b2a4ff);
     padding: 5px;
@@ -109,8 +118,8 @@ body {
     justify-content: center;
     align-items: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    margin-left: 20rem;
-    position: absolute;
+    position: absolute; /* Revertido a absolute */
+    margin-left: 20rem; /* Revertido a 20rem */
 }
 
 .profile-image {
@@ -135,7 +144,7 @@ body {
     outline: none;
 }
 
-/* Navegación lateral */
+/* Navegación lateral (escritorio) */
 .nav-item-custom {
     display: flex;
     align-items: center;
@@ -143,6 +152,7 @@ body {
     margin-bottom: 1rem;
     cursor: pointer;
     transition: transform 0.3s ease;
+    width: fit-content; /* Ajusta el ancho al contenido */
 }
 
 .nav-text {
@@ -181,7 +191,7 @@ i.primary {
     background-color: #dcdcdc;
 }
 
-/* Ventanas laterales */
+/* Ventanas laterales (escritorio) */
 .ventana-opcion1,
 .ventana-opcion2,
 .ventana-opcion3,
@@ -191,20 +201,16 @@ i.primary {
     left: 0;
     width: 55vw;
     height: 100vh;
-    /* Asegura que ocupe el 100% de la altura del viewport */
     overflow-y: auto;
-    /* Permite el desplazamiento vertical si el contenido excede */
     background: #b2a4ff;
     transform: translateX(-100%);
     transition: transform 0.5s cubic-bezier(0.77, 0, 0.18, 1);
     z-index: 10;
-    pointer-events: none;
+    pointer-events: none; /* Inhabilita interacciones cuando está oculta */
 
-    /* Estilos para ocultar la barra de desplazamiento en todas las ventanas */
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
+    /* Ocultar barra de desplazamiento */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
 }
 
 /* Para navegadores basados en Webkit (Chrome, Safari) */
@@ -215,8 +221,7 @@ i.primary {
     display: none;
 }
 
-
-/* Mostrar ventana al hacer hover en la opción, solo si NO está fija */
+/* Mostrar ventana al hacer hover en la opción (solo si NO está fija) */
 .opcion1:hover~.ventana-opcion1:not(.ventana-fija),
 .opcion2:hover~.ventana-opcion2:not(.ventana-fija),
 .opcion3:hover~.ventana-opcion3:not(.ventana-fija),
@@ -234,11 +239,12 @@ i.primary {
     pointer-events: auto;
 }
 
-/* ----------------- habilidades ------------------- */
+/* Sección de Habilidades */
 .section-title-container {
     display: flex;
     justify-content: center;
     position: relative;
+    margin-bottom: 1.5rem; /* Espacio debajo del título de sección */
 }
 
 .section-title {
@@ -246,6 +252,7 @@ i.primary {
     padding: 0 15px;
     background-color: #b2a4ff;
     z-index: 1;
+    font-size: 1.8rem; /* Ajuste de tamaño de fuente */
 }
 
 .section-title-container::before,
@@ -280,10 +287,11 @@ i.primary {
     padding: 12px 25px;
     border-radius: 9999px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
     white-space: nowrap;
     font-size: smaller;
     cursor: pointer;
+    color: #1d2b53; /* Color de texto para las burbujas de habilidad */
 }
 
 .skill-bubble:hover,
@@ -291,111 +299,100 @@ i.primary {
     background-color: #d6d6d6;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     outline: none;
-}
-
-h1 {
-    margin: 0;
+    transform: translateY(-2px);
 }
 
 .icon_opcion1 {
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
+    margin-bottom: 2rem; /* Espacio debajo de los iconos de opción */
 }
 
 .icon_opcion1 i {
     font-size: xx-large;
+    color: #1d2b53; /* Color por defecto para los iconos de habilidad */
+    transition: color 0.2s ease-in-out;
+}
+
+.skill-category-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre icono y texto */
+}
+
+.skill-category-item h4, .skill-category-item p {
+    margin: 0; /* Elimina márgenes por defecto */
 }
 
 /* Efectos hover para iconos de habilidades */
-.skill-category-item:hover #icon-html {
-    color: #E34F26;
-}
-
-.skill-category-item:hover #icon-css {
-    color: #1572B6;
-}
-
-.skill-category-item:hover #icon-javascript {
-    color: #f0db4f;
-}
-
-.skill-bubble:hover #icon-bootstrap {
-    color: #7952B3;
-}
-
-.skill-bubble:hover #icon-tailwind {
-    color: #06B6D4;
-}
-
-.skill-bubble:hover #icon-angular {
-    color: #DD0031;
-}
-
-.skill-bubble:hover #icon-react {
-    color: #61DAFB;
-}
-
-.skill-category-item:hover #icon-nodejs {
-    color: #339933;
-}
-
-.skill-category-item:hover #icon-mysql {
-    color: #4479A1;
-}
-
-.skill-bubble:hover #icon-git {
-    color: #F05032;
-}
+.skill-category-item:hover #icon-html { color: #E34F26; }
+.skill-category-item:hover #icon-css { color: #1572B6; }
+.skill-category-item:hover #icon-javascript { color: #f0db4f; }
+.skill-bubble:hover #icon-bootstrap { color: #7952B3; }
+.skill-bubble:hover #icon-tailwind { color: #06B6D4; }
+.skill-bubble:hover #icon-angular { color: #DD0031; }
+.skill-bubble:hover #icon-react { color: #61DAFB; }
+.skill-category-item:hover #icon-nodejs { color: #339933; }
+.skill-category-item:hover #icon-mysql { color: #4479A1; }
+.skill-bubble:hover #icon-git { color: #F05032; }
 
 /* Iconos personalizados con imágenes de fondo */
 #icon-ionic {
-    background-image: url('./img/icon_ionic.svg');
+    background-image: url('./img/icon_ionic.svg'); /* Placeholder */
     width: 20px;
     height: 20px;
     background-size: contain;
+    background-repeat: no-repeat;
     display: inline-block;
+    transition: background-image 0.2s ease-in-out;
 }
 
 .skill-bubble:hover #icon-ionic {
-    background-image: url('./img/ionic_blue.svg');
+    background-image: url('./img/ionic_blue.svg'); /* Placeholder */
 }
 
 #icon-mysql {
-    background-image: url('./img/icon_mysql.svg');
+    background-image: url('./img/icon_mysql.svg'); /* Placeholder */
     width: 30px;
     height: 30px;
     background-size: contain;
+    background-repeat: no-repeat;
     margin-top: 0.6rem;
     display: inline-block;
+    transition: background-image 0.2s ease-in-out;
 }
 
 .skill-category-item:hover #icon-mysql {
-    background-image: url('./img/icon_mysql_color.svg');
+    background-image: url('./img/icon_mysql_color.svg'); /* Placeholder */
 }
 
 #icon-vscode {
-    background-image: url('./img/icon_vs.svg');
+    background-image: url('./img/icon_vs.svg'); /* Placeholder */
     width: 22px;
     height: 22px;
     background-size: contain;
+    background-repeat: no-repeat;
     display: inline-block;
+    transition: background-image 0.2s ease-in-out;
 }
 
 .skill-bubble:hover #icon-vscode {
-    background-image: url('./img/icon_vs_blue.svg');
+    background-image: url('./img/icon_vs_blue.svg'); /* Placeholder */
 }
 
 #icon-canva {
-    background-image: url('./img/icon_canva.svg');
+    background-image: url('./img/icon_canva.svg'); /* Placeholder */
     width: 22px;
     height: 22px;
     background-size: contain;
+    background-repeat: no-repeat;
     display: inline-block;
+    transition: background-image 0.2s ease-in-out;
 }
 
 .skill-bubble:hover #icon-canva {
-    background-image: url('./img/icon_canva_color.svg');
+    background-image: url('./img/icon_canva_color.svg'); /* Placeholder */
 }
 
 /* Utilidad para puntero */
@@ -403,7 +400,7 @@ h1 {
     cursor: pointer;
 }
 
-/* Perfil alterno */
+/* Perfil alterno (en sección "Sobre mí") */
 .profile-img-container {
     width: 200px;
     height: 200px;
@@ -427,9 +424,10 @@ h1 {
     background-color: #b2a4ff;
     padding: 8px 15px;
     border-radius: 20px;
+    color: #1d2b53; /* Color de texto para el badge */
 }
 
-/* Info y descripción */
+/* Información y descripción */
 .info-section {
     font-size: 1.1rem;
     color: #555;
@@ -447,7 +445,7 @@ h1 {
     margin-bottom: 5rem;
 }
 
-/* Intereses */
+/* Intereses / Hobbies */
 .interests-section .interest-item {
     display: flex;
     flex-direction: column;
@@ -469,12 +467,16 @@ h1 {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
 
 .interest-icon:hover,
 .interest-icon:focus {
     color: #1d2b53;
+    background-color: #b2a4ff;
+    border-color: #b2a4ff;
     outline: none;
+    transform: translateY(-3px);
 }
 
 .interests-section .interest-text {
@@ -482,13 +484,9 @@ h1 {
     color: #000000;
 }
 
-/* Color de ventana alterno */
-#ventana_color {
-    background: #dcdcdc;
-}
-
+/* Contenedor general de secciones de ventana */
 .container {
-    padding: 4rem;
+    padding: 4rem; /* Relleno general para el contenido de las ventanas */
 }
 
 /* Educación y experiencia */
@@ -512,6 +510,7 @@ h1 {
 
 .timeline-item {
     position: relative;
+    margin-bottom: 30px; /* Espacio entre ítems de la línea de tiempo */
 }
 
 .timeline-item::before {
@@ -551,7 +550,7 @@ h1 {
 }
 
 .timeline-content ul li::before {
-    content: '\2022';
+    content: '\2022'; /* Punto de lista */
     color: #1d2b53;
     font-weight: bold;
     position: absolute;
@@ -559,29 +558,6 @@ h1 {
 }
 
 /* Botones y badges */
-.link-badge {
-    display: inline-block;
-    border: 1px solid #1d2b53;
-    color: #1d2b53;
-    padding: 5px 10px;
-    border-radius: 20px;
-    margin-right: 10px;
-    text-decoration: none;
-    font-size: 0.8rem;
-}
-
-.link-badge i {
-    margin-left: 5px;
-}
-
-.link-badge:hover,
-.link-badge:focus {
-    background-color: #d6d6d6;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: none;
-    outline: none;
-}
-
 .download-cv-button {
     background-color: #dcdcdc;
     color: #1d2b53;
@@ -594,6 +570,7 @@ h1 {
     justify-content: center;
     text-decoration: none;
     float: right;
+    transition: all 0.2s ease-in-out;
 }
 
 .download-cv-button:hover,
@@ -622,10 +599,12 @@ h1 {
     z-index: 1000;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
+    pointer-events: none; /* No interactuable cuando está oculto */
 }
 
 .message-box.show {
     opacity: 1;
+    pointer-events: auto; /* Interactuable cuando está visible */
 }
 
 .icon_cv {
@@ -637,100 +616,54 @@ h1 {
     align-items: center;
     background-color: #1d2b53;
     color: #dcdcdc;
-    font-size: 0.5rem;
-    /* Corregido */
+    font-size: 0.8rem; /* Ajustado para mejor visibilidad */
 }
 
 /* Proyectos */
-
-
-.project-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.project-details {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-}
-
-.project-details h3 {
-    color: #1d2b53;
-    font-weight: bold;
-}
-
-.project-details p {
-    color: #000000;
-    font-size: 0.95rem;
-    margin: 0;
+.card-img-top {
+    height: 200px; /* Altura fija para las imágenes de las tarjetas */
+    object-fit: cover; /* Asegura que las imágenes cubran el área */
 }
 
 .tech-badge {
     background-color: #dcdcdc87;
-    color:#1d2b53;
+    color: #1d2b53;
     padding: 5px 10px;
+    border-radius: 9999px; /* Para que sea completamente redondeado */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     white-space: nowrap;
     font-size: small;
 }
 
-.go-button {
-    background-color: #1d2b53;
-    color: #dcdcdc;
-    padding: 2px 12px;
-    border-radius: 15px;
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-.go-button i {
-    margin-right: 8px;
-}
-
-.card-img-top {
-    height: 200px;
-    /* Fixed height for images */
-    object-fit: cover;
-    /* Ensures images cover the area */
-}
-
-/* Custom class for the section background, if not using Bootstrap's bg-white */
-.ventana-primary-bg {
-    background-color: #ffffff;
-}
-
-/* Custom class for the section background, if not using Bootstrap's bg-white */
-.ventana-primary-bg {
-    background-color: #ffffff;
-}
-
 .btn-proyecto {
     background-color: #1d2b53;
     color: #dcdcdc;
+    transition: all 0.2s ease-in-out;
 }
 
-.btn-proyecto:hover {
+.btn-proyecto:hover,
+.btn-proyecto:focus {
     background-color: #b2a4ff;
     color: #1d2b53;
+    outline: none;
 }
 
 .btn-outline-proyecto {
     border-color: #1d2b53;
     color: #1d2b53;
+    transition: all 0.2s ease-in-out;
 }
 
-.btn-outline-proyecto:hover {
+.btn-outline-proyecto:hover,
+.btn-outline-proyecto:focus {
     border-color: #b2a4ff;
-    color: #b2a4ff
-    ;
+    color: #b2a4ff;
+    background-color: transparent; /* Asegura que no tenga fondo al hacer hover */
+    outline: none;
 }
 
 .no-italics-link {
-    font-style: normal;
+    font-style: normal; /* Elimina la cursiva de los iconos dentro de los enlaces */
 }
 
 /* /////////////////////////////////////////////////////////
@@ -742,46 +675,31 @@ h1 {
     .container-custom {
         flex-direction: column;
         min-height: 100vh;
-        /* Asegura que siempre ocupe al menos la altura del viewport */
-        overflow-y: auto;
-        /* Permite el desplazamiento de todo el container-custom en móvil/tablet */
+        overflow-y: auto; /* Permite el desplazamiento de todo el container-custom */
     }
 
     .sidebar {
-        width: 100%;
-        min-width: unset;
-        max-width: unset;
-        justify-content: center;
         padding: 1rem;
-        flex-shrink: 0;
     }
 
     .main-content {
-        width: 100%;
-        max-width: 100vw;
-        min-width: 0;
         padding: 1rem;
-        flex: 1;
-        overflow-y: visible;
-        /* Cambiado a visible para que el scroll lo maneje el container-custom */
-        justify-content: flex-start;
+        overflow-y: visible; /* Cambiado a visible para que el scroll lo maneje el container-custom */
     }
 
-    .main-content>section {
+    .main-content > section {
         width: 100%;
         height: auto;
-        /* Cambiado a auto para que la sección crezca con el acordeón */
         display: flex;
         flex-direction: column;
     }
 
     .profile-image-wrapper {
-        width: 250px;
-        height: 250px;
-        margin-left: 0;
-        /* Reiniciar el margen izquierdo para móvil/tablet */
+        width: 200px; /* Ajuste de tamaño para móvil */
+        height: 200px; /* Ajuste de tamaño para móvil */
+        margin-left: 0; /* Reiniciar el margen izquierdo */
         margin-bottom: 1rem;
-        position: relative;
+        position: relative; /* Vuelve a relative para móvil */
     }
 
     .profile-section {
@@ -823,7 +741,7 @@ h1 {
         align-items: center;
         width: 100%;
         text-align: left;
-        font-size: 1.5rem;
+        font-size: 1.2rem; /* Ajuste de tamaño de fuente para móvil */
     }
 
     .accordion-header button:not(.collapsed) {
@@ -846,26 +764,20 @@ h1 {
         overflow-x: hidden;
     }
 
-    .accordion-body #collapseTwo,
-    #collapseFour {
+    /* Fondos específicos para acordeón de proyectos y sobre mí */
+    #collapseTwo .accordion-body,
+    #collapseFour .accordion-body {
         background-color: #dcdcdc;
     }
 
-    /* Añadido para una transición más suave del acordeón */
+    /* Transición más suave para el acordeón */
     .accordion-collapse {
         transition: height 0.35s ease-out;
-        /* Transición para la altura */
     }
 
     .accordion-body .container {
-        padding: 0;
+        padding: 0; /* Elimina el padding extra en el contenedor del acordeón */
     }
-
-    .project-image-container {
-        margin-bottom: 1rem;
-        height: 250px;
-    }
-
 
     .profile-img-container {
         margin: 0 auto 1rem auto;
@@ -891,7 +803,7 @@ h1 {
     }
 }
 
-/* Estilos específicos para móviles pequeños (mantener si es necesario para ajustes finos) */
+/* Estilos específicos para móviles pequeños (hasta 480px de ancho) */
 @media (max-width: 480px) {
     .section-title {
         font-size: 1.5em;
@@ -906,66 +818,61 @@ h1 {
         font-size: 0.8em;
         padding: 8px 15px;
     }
-}
 
+    .icon_opcion1 {
+        flex-direction: column; /* Apila los elementos en pantallas muy pequeñas */
+        align-items: center;
+    }
+
+    .skill-category-item {
+        margin-bottom: 1rem; /* Espacio entre ítems apilados */
+    }
+}
 
 /* Desktop y pantallas grandes (a partir de 992px de ancho) */
 @media (min-width: 992px) {
-
-    /* Ajustes para escritorio */
-    body {
-        display: flex;
-        /* Añadido para centrar el container-custom en escritorio */
-        justify-content: center;
-        /* Centra horizontalmente */
-        align-items: center;
-        /* Centra verticalmente */
-    }
-
     .container-custom {
-        flex-direction: row;
-        height: 100vh;
-        /* Vuelve a 100vh en escritorio */
-        overflow: hidden;
-        /* Oculta el overflow en escritorio */
+        flex-direction: row; /* Vuelve a la disposición en fila */
+        height: 100vh; /* Ocupa toda la altura del viewport */
+        overflow: hidden; /* Oculta el overflow en escritorio */
     }
 
     .sidebar {
-        position: relative;
-        z-index: 10;
-        flex-shrink: 0;
-        /* Asegura que la barra lateral no se encoja */
-        justify-content: space-between;
-        /* Distribuye el espacio verticalmente */
+        width: 450px; /* Ancho fijo para el sidebar en escritorio */
+        min-width: 250px;
+        max-width: 450px;
+        justify-content: space-between; /* Distribuye el espacio verticalmente */
+        padding: 2rem; /* Ajuste de padding para escritorio */
     }
 
     .main-content {
-        overflow-y: auto;
-        /* Permite el scroll interno en escritorio */
-        justify-content: center;
-        /* Centra verticalmente el contenido principal en escritorio */
+        flex-grow: 1;
+        justify-content: center; /* Centra verticalmente el contenido principal */
     }
 
     .profile-image-wrapper {
-        /* Eliminado margin-left: 20rem; para permitir el centrado horizontal por align-items en sidebar */
+        width: 350px; /* Tamaño más grande para escritorio */
+        height: 350px; /* Tamaño más grande para escritorio */
         margin-bottom: 1.5rem;
-        /* Asegurar el margen inferior */
+        position: absolute; /* Mantiene la posición absoluta para escritorio */
+        margin-left: 20rem; /* Mantiene el margen izquierdo para escritorio */
     }
 
-    /* Asegura que la sección de perfil ocupe el espacio necesario sin empujar los iconos sociales */
     .profile-section {
-        flex-grow: 1;
-        /* Permite que la sección de perfil crezca y empuje los iconos sociales hacia abajo */
+        flex-grow: 1; /* Permite que la sección de perfil crezca */
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /* Centra el contenido dentro de profile-section */
         align-items: center;
-        /* Centra la imagen de perfil horizontalmente dentro de profile-section */
     }
 
     .social-icons {
-        margin-top: auto;
-        /* Empuja los iconos sociales al final del sidebar */
+        margin-top: auto; /* Empuja los iconos sociales al final del sidebar */
+    }
+
+    /* Ajuste de padding para el contenedor de proyectos en escritorio */
+    #ventana-opcion2 .container,
+    #ventana-opcion4 .container {
+        padding: 2rem 4rem; /* Ajusta el padding para estas secciones */
     }
 }

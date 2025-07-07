@@ -4,101 +4,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
+    <meta name="description"
+        content="Portafolio profesional de Zuleima Castelar, desarrolladora con experiencia en HTML, CSS, JavaScript, React, Angular y más. Descubre mis proyectos y habilidades.">
+    <title>Portafolio de Zuleima Castelar</title>
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Remix Icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container-custom">
-        <!-- Sidebar -->
-        <aside class="sidebar d-flex flex-column align-items-center" aria-label="Barra lateral">
-            <div class="fs-2 fw-bold secondary mb-4 mb-md-5">
-                MI<span class="tertiary">Portafolio</span>
+        <!-- Sidebar principal -->
+        <aside class="sidebar d-flex flex-column" aria-label="Barra lateral de navegación">
+            <div class="fs-1 fw-bold secondary mb-4 mb-md-5">
+                Mi|<span class="tertiary fs-3">Portafolio</span>
             </div>
-            <!-- Perfil -->
+            <!-- Sección de perfil -->
             <div class="profile-section d-flex flex-column align-items-center mb-4">
                 <div class="profile-image-wrapper">
-                    <img src="./img/perfil.png" alt="Foto de perfil de Zuleima Castelar"
-                        class="img-fluid profile-image">
+                    <img src="./img/perfil.webp" alt="Foto de perfil de Zuleima Castelar"
+                        class="img-fluid profile-image" loading="lazy">
                 </div>
             </div>
-            <!-- Redes Sociales -->
-            <nav class="social-icons d-flex gap-3" aria-label="Redes sociales">
+            <!-- Iconos de redes sociales -->
+            <nav class="social-icons d-flex gap-3" aria-label="Enlaces a redes sociales">
                 <a href="https://wa.me/584241288604" target="_blank" class="social-icon-link text-decoration-none"
-                    aria-label="WhatsApp">
+                    aria-label="Contactar por WhatsApp">
                     <i class="ri-whatsapp-fill"></i>
                 </a>
                 <a href="https://www.linkedin.com/in/zuleimacastelar/" target="_blank"
-                    class="social-icon-link mx-2 text-decoration-none" aria-label="LinkedIn">
+                    class="social-icon-link mx-2 text-decoration-none" aria-label="Perfil de LinkedIn">
                     <i class="ri-linkedin-box-fill"></i>
                 </a>
                 <a href="mailto:zulycas00@gmail.com" class="social-icon-link text-decoration-none"
-                    aria-label="Correo electrónico">
+                    aria-label="Enviar correo electrónico">
                     <i class="bi bi-envelope-fill"></i>
                 </a>
             </nav>
         </aside>
-        <!-- Contenido Principal -->
+
+        <!-- Contenido principal -->
         <main class="main-content d-flex flex-column justify-content-center">
-            <section class="d-flex flex-column fs-2 align-items-center" aria-label="Navegación principal">
-                <!-- Ventana y opciones para móvil y tablets -->
+            <section class="d-flex flex-column fs-2 align-items-center"
+                aria-label="Secciones principales del portafolio">
+                <!-- Acordeón para dispositivos móviles y tablets -->
                 <div class="accordion d-lg-none w-100" id="portfolioAccordion">
                     <!-- Habilidades -->
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                <i class="bi bi-gear icon_style secondary me-3"></i>
+                                <i class="bi bi-gear icon_style secondary me-3" aria-hidden="true"></i>
                                 <span class="nav-text">Habilidades</span>
                             </button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                             data-bs-parent="#portfolioAccordion">
                             <div class="accordion-body">
-                                <section class="secondary" id="ventana-opcion1-mobile" aria-label="Habilidades">
+                                <section class="secondary" id="ventana-opcion1-mobile"
+                                    aria-label="Detalle de Habilidades">
                                     <div class="container fs-5">
-                                        <!-- Frontend -->
+                                        <!-- Frontend Skills -->
                                         <div class="section-title-container mb-4">
-                                            <h2 class="section-title">Frontend</h2>
+                                            <h3 class="section-title">Frontend</h3>
                                         </div>
                                         <div class="icon_opcion1">
                                             <div class="skill-category-item d-flex cursor-pointer">
-                                                <i class="ri-html5-fill" id="icon-html"></i>
+                                                <i class="ri-html5-fill" id="icon-html" aria-hidden="true"></i>
                                                 <div>
-                                                    <h3 class="fs-5 fw-bold">HTML</h3>
+                                                    <h4 class="fs-5 fw-bold">HTML</h4>
                                                     <p class="fs-6">Intermedio</p>
                                                 </div>
                                             </div>
                                             <div class="skill-category-item d-flex cursor-pointer">
-                                                <i class="ri-css3-fill" id="icon-css"></i>
+                                                <i class="ri-css3-fill" id="icon-css" aria-hidden="true"></i>
                                                 <div>
-                                                    <h3 class="fs-5 fw-bold">CSS</h3>
+                                                    <h4 class="fs-5 fw-bold">CSS</h4>
                                                     <p class="fs-6">Intermedio</p>
                                                 </div>
                                             </div>
                                             <div class="skill-category-item d-flex cursor-pointer">
-                                                <i class="ri-javascript-fill" id="icon-javascript"></i>
+                                                <i class="ri-javascript-fill" id="icon-javascript"
+                                                    aria-hidden="true"></i>
                                                 <div>
-                                                    <h3 class="fs-5 fw-bold">JavaScript</h3>
+                                                    <h4 class="fs-5 fw-bold">JavaScript</h4>
                                                     <p class="fs-6">Básico</p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="skills-grid">
                                             <div class="skill-bubble d-flex align-items-center">
-                                                <i class="ri-bootstrap-fill fs-4" id="icon-bootstrap"></i>
+                                                <i class="ri-bootstrap-fill fs-4" id="icon-bootstrap"
+                                                    aria-hidden="true"></i>
                                                 <span>Bootstrap</span>
                                             </div>
                                             <div class="skill-bubble d-flex align-items-center">
-                                                <i class="ri-tailwind-css-fill fs-4" id="icon-tailwind"></i>
+                                                <i class="ri-tailwind-css-fill fs-4" id="icon-tailwind"
+                                                    aria-hidden="true"></i>
                                                 <span>Tailwind</span>
                                             </div>
                                             <div class="skill-bubble d-flex align-items-center">
-                                                <i class="ri-reactjs-fill fs-4" id="icon-react"></i>
+                                                <i class="ri-reactjs-fill fs-4" id="icon-react" aria-hidden="true"></i>
                                                 <span>React</span>
                                             </div>
                                             <div class="skill-bubble d-flex align-items-center">
@@ -106,33 +120,34 @@
                                                 <span>Ionic</span>
                                             </div>
                                             <div class="skill-bubble d-flex align-items-center">
-                                                <i class="ri-angularjs-fill fs-4" id="icon-angular"></i>
+                                                <i class="ri-angularjs-fill fs-4" id="icon-angular"
+                                                    aria-hidden="true"></i>
                                                 <span>Angular</span>
                                             </div>
                                         </div>
-                                        <!-- Backend -->
+                                        <!-- Backend Skills -->
                                         <div class="section-title-container my-4">
-                                            <h2 class="section-title">Backend</h2>
+                                            <h3 class="section-title">Backend</h3>
                                         </div>
                                         <div class="icon_opcion1">
                                             <div class="skill-category-item d-flex cursor-pointer">
-                                                <i class="ri-nodejs-line" id="icon-nodejs"></i>
+                                                <i class="ri-nodejs-line" id="icon-nodejs" aria-hidden="true"></i>
                                                 <div>
-                                                    <h3 class="fs-5 fw-bold">Node.js</h3>
+                                                    <h4 class="fs-5 fw-bold">Node.js</h4>
                                                     <p class="fs-6">Básico</p>
                                                 </div>
                                             </div>
                                             <div class="skill-category-item d-flex cursor-pointer">
                                                 <span id="icon-mysql" aria-label="MySQL"></span>
                                                 <div>
-                                                    <h3 class="fs-5 fw-bold">MySQL</h3>
+                                                    <h4 class="fs-5 fw-bold">MySQL</h4>
                                                     <p class="fs-6">Básico</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- Otros -->
+                                        <!-- Other Skills -->
                                         <div class="section-title-container my-4">
-                                            <h2 class="section-title">Otros</h2>
+                                            <h3 class="section-title">Otros</h3>
                                         </div>
                                         <div class="skills-grid">
                                             <div class="skill-bubble d-flex align-items-center">
@@ -144,7 +159,7 @@
                                                 <span>Canva</span>
                                             </div>
                                             <div class="skill-bubble d-flex align-items-center">
-                                                <i class="bi bi-git fs-5" id="icon-git"></i>
+                                                <i class="bi bi-git fs-5" id="icon-git" aria-hidden="true"></i>
                                                 <span>Git</span>
                                             </div>
                                             <span class="skill-bubble">Organizada</span>
@@ -159,36 +174,37 @@
                         </div>
                     </div>
 
-                    <!-- Proyectos  -->
+                    <!-- Proyectos -->
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                <i class="bi bi-folder2-open icon_style primary secondary me-3"></i>
+                                <i class="bi bi-folder2-open icon_style primary secondary me-3" aria-hidden="true"></i>
                                 <span class="nav-text">Proyectos</span>
                             </button>
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                             data-bs-parent="#portfolioAccordion">
                             <div class="accordion-body ventana-primary-bg">
-                                <section id="ventana-opcion2-mobile" aria-label="Proyectos" tabindex="-1">
+                                <section id="ventana-opcion2-mobile" aria-label="Lista de Proyectos">
                                     <div class="container">
                                         <div class="row row-cols-1 g-4">
                                             <!-- Proyecto 1 -->
                                             <div class="col mb-4">
                                                 <div class="card h-100 shadow-lg border-0 rounded-3">
-                                                    <img src="./img/proyecto1.png" alt="Proyecto Web 1"
-                                                        class="card-img-top">
-                                                    <div class="card-body d-flex flex-column gap-2 ">
-                                                        <h3 class="card-title mb-0 secondary fw-bold">Sitio Web | Diseño
-                                                            de Interiores</h3>
-                                                        <p class="card-text fs-6 mb-0">Se ha desarrollado un sitio web
-                                                            integral para un estudio de diseño de interiores. Este
-                                                            presenta una página de inicio con una estructura de
-                                                            múltiples secciones dedicadas a servicios, portafolio, blog
-                                                            y contacto. El diseño del sitio asegura una experiencia de
-                                                            usuario responsiva. </p>
-                                                        <div class="d-flex">
+                                                    <img src="./img/proyecto1.webp"
+                                                        alt="Captura de pantalla del Proyecto Web 1"
+                                                        class="card-img-top" loading="lazy">
+                                                    <div class="card-body d-flex flex-column gap-2">
+                                                        <h4 class="card-title mb-0 secondary fw-bold">Sitio Web | Diseño
+                                                            de Interiores</h4>
+                                                        <p class="card-text fs-6 mb-0">Página web enfocada en la
+                                                            presentación visual de ambientes y tendencias para el hogar.
+                                                            Cuenta con una página de inicio y varias secciones dedicadas
+                                                            a servicios, portafolio, galería, blog y contacto. La
+                                                            estructura está optimizada para dispositivos móviles y de
+                                                            escritorio, siguiendo buenas prácticas de diseño web.</p>
+                                                        <div class="d-flex flex-wrap">
                                                             <span class="tech-badge rounded-pill me-2 mb-2">HTML</span>
                                                             <span class="tech-badge rounded-pill me-2 mb-2">CSS</span>
                                                             <span class="tech-badge rounded-pill me-2 mb-2">JS</span>
@@ -197,8 +213,10 @@
                                                         </div>
                                                         <div class="d-flex gap-2 mt-auto justify-content-end">
                                                             <a href="https://webhogar.github.io/hogar/" target="_blank"
-                                                                class="btn btn-proyecto d-inline-flex align-items-center justify-content-center">
-                                                                <i class="bi bi-link-45deg no-italics-link">Ir</i>
+                                                                class="btn btn-proyecto d-inline-flex align-items-center justify-content-center"
+                                                                aria-label="Ver sitio al Proyecto de Diseño de Interiores">
+                                                                <i class="bi bi-link-45deg no-italics-link"
+                                                                    aria-hidden="true"></i>Ver sitio
                                                             </a>
                                                         </div>
                                                     </div>
@@ -208,18 +226,16 @@
                                             <!-- Proyecto 2 -->
                                             <div class="col mb-4">
                                                 <div class="card h-100 shadow-lg border-0 rounded-3">
-                                                    <img src="./img/proyecto1.png" alt="Proyecto Web 1"
-                                                        class="card-img-top">
-                                                    <div class="card-body d-flex flex-column gap-2 ">
-                                                        <h3 class="card-title mb-0 secondary fw-bold">Sitio Web Diseño
-                                                            de Interiores</h3>
-                                                        <p class="card-text fs-6 mb-0">Se ha desarrollado un sitio web
-                                                            integral para un estudio de diseño de interiores. Este
-                                                            presenta una página de inicio con una estructura de
-                                                            múltiples secciones dedicadas a servicios, portafolio, blog
-                                                            y contacto. El diseño del sitio asegura una experiencia de
-                                                            usuario responsiva.</p>
-                                                        <div class="d-flex">
+                                                    <img src="https://placehold.co/600x400/dcdcdc/1d2b53?text=Proyecto+2"
+                                                        alt="Captura de pantalla del Proyecto Web 2"
+                                                        class="card-img-top" loading="lazy">
+                                                    <div class="card-body d-flex flex-column gap-2">
+                                                        <h4 class="card-title mb-0 secondary fw-bold">Página Web de
+                                                            Gestión de Proyectos</h4>
+                                                        <p class="card-text fs-6 mb-0">Creada para ofrecer servicios
+                                                            sobre la
+                                                            gestión de proyectos.</p>
+                                                        <div class="d-flex flex-wrap">
                                                             <span class="tech-badge rounded-pill me-2 mb-2">HTML</span>
                                                             <span class="tech-badge rounded-pill me-2 mb-2">CSS</span>
                                                             <span class="tech-badge rounded-pill me-2 mb-2">JS</span>
@@ -228,12 +244,16 @@
                                                         </div>
                                                         <div class="d-flex gap-2 mt-auto justify-content-end">
                                                             <a href="#"
-                                                                class="btn btn-proyecto d-inline-flex align-items-center justify-content-center">
-                                                                <i class="bi bi-link-45deg no-italics-link">Ir</i>
+                                                                class="btn btn-proyecto d-inline-flex align-items-center justify-content-center"
+                                                                aria-label="Ver sitio al Proyecto de Gestión de Proyectos">
+                                                                <i class="bi bi-link-45deg no-italics-link"
+                                                                    aria-hidden="true"></i>Ver sitio
                                                             </a>
                                                             <a href="#"
-                                                                class="btn btn-outline-proyecto d-inline-flex align-items-center justify-content-center">
-                                                                <i class="bi bi-play-circle no-italics-link">Demo</i>
+                                                                class="btn btn-outline-proyecto d-inline-flex align-items-center justify-content-center"
+                                                                aria-label="Ver Demo del Proyecto de Gestión de Proyectos">
+                                                                <i class="bi bi-play-cVer sitiocle no-italics-link"
+                                                                    aria-hidden="true"></i>Demo
                                                             </a>
                                                         </div>
                                                     </div>
@@ -243,14 +263,15 @@
                                             <!-- Proyecto 3 -->
                                             <div class="col mb-4">
                                                 <div class="card h-100 shadow-lg border-0 rounded-3">
-                                                    <img src="./img/proyecto1.png" alt="Proyecto Web 1"
-                                                        class="card-img-top">
-                                                    <div class="card-body d-flex flex-column gap-2 ">
-                                                        <h3 class="card-title mb-0 secondary fw-bold">Página Web</h3>
-                                                        <p class="card-text fs-6 mb-0">Creada para ofrecer servicios
-                                                            sobre la
-                                                            gestión de proyectos.</p>
-                                                        <div class="d-flex">
+                                                    <img src="https://placehold.co/600x400/dcdcdc/1d2b53?text=Proyecto+3"
+                                                        alt="Captura de pantalla del Proyecto Web 3"
+                                                        class="card-img-top" loading="lazy">
+                                                    <div class="card-body d-flex flex-column gap-2">
+                                                        <h4 class="card-title mb-0 secondary fw-bold">Página Web de
+                                                            Servicios</h4>
+                                                        <p class="card-text fs-6 mb-0">Un sitio web diseñado para
+                                                            presentar diversos servicios profesionales.</p>
+                                                        <div class="d-flex flex-wrap">
                                                             <span class="tech-badge rounded-pill me-2 mb-2">HTML</span>
                                                             <span class="tech-badge rounded-pill me-2 mb-2">CSS</span>
                                                             <span class="tech-badge rounded-pill me-2 mb-2">JS</span>
@@ -259,12 +280,16 @@
                                                         </div>
                                                         <div class="d-flex gap-2 mt-auto justify-content-end">
                                                             <a href="#"
-                                                                class="btn btn-proyecto d-inline-flex align-items-center justify-content-center">
-                                                                <i class="bi bi-link-45deg no-italics-link">Ir</i>
+                                                                class="btn btn-proyecto d-inline-flex align-items-center justify-content-center"
+                                                                aria-label="Ver sitio al Proyecto de Servicios">
+                                                                <i class="bi bi-link-45deg no-italics-link"
+                                                                    aria-hidden="true"></i>Ver sitio
                                                             </a>
                                                             <a href="#"
-                                                                class="btn btn-outline-proyecto d-inline-flex align-items-center justify-content-center">
-                                                                <i class="bi bi-play-circle no-italics-link">Demo</i>
+                                                                class="btn btn-outline-proyecto d-inline-flex align-items-center justify-content-center"
+                                                                aria-label="Ver Demo del Proyecto de Servicios">
+                                                                <i class="bi bi-play-cVer sitiocle no-italics-link"
+                                                                    aria-hidden="true"></i>Demo
                                                             </a>
                                                         </div>
                                                     </div>
@@ -273,7 +298,6 @@
                                         </div>
                                     </div>
                                 </section>
-
                             </div>
                         </div>
                     </div>
@@ -283,26 +307,26 @@
                         <h2 class="accordion-header" id="headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                <i class="bi bi-file-earmark-text icon_style secondary me-3"></i>
+                                <i class="bi bi-file-earmark-text icon_style secondary me-3" aria-hidden="true"></i>
                                 <span class="nav-text">Experiencia</span>
                             </button>
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                             data-bs-parent="#portfolioAccordion">
                             <div class="accordion-body">
-                                <section id="ventana-opcion3-mobile" aria-label="Experiencia">
+                                <section id="ventana-opcion3-mobile" aria-label="Detalle de Experiencia y Formación">
                                     <div class="container fs-6">
                                         <div class="border-style">
-                                            <h2 class="fw-bold secondary mr-3">Formación</h2>
+                                            <h3 class="fw-bold secondary mr-3">Formación</h3>
                                         </div>
                                         <div class="education-item">
-                                            <h6 class="secondary fw-bold mb-0 mt-3">UNIVERSIDAD ALEJANDRO DE HUMBOLDT
-                                            </h6>
+                                            <h4 class="secondary fw-bold mb-0 mt-3">UNIVERSIDAD ALEJANDRO DE HUMBOLDT
+                                            </h4>
                                             <p>Ing. en Informática 2023 - Actual</p>
                                         </div>
                                         <div class="education-item border-style">
-                                            <h6 class="secondary fw-bold mb-0">INSTITUTO UNIVERSITARIO DE GERENCIA Y
-                                                TECNOLOGÍA</h6>
+                                            <h4 class="secondary fw-bold mb-0">INSTITUTO UNIVERSITARIO DE GERENCIA Y
+                                                TECNOLOGÍA</h4>
                                             <p class="mb-3">TSU en Informática 2019 - 2022</p>
                                         </div>
                                         <div class="timeline">
@@ -324,10 +348,12 @@
                                             </div>
                                         </div>
                                         <!-- Botón de descargar CV -->
-                                        <a href="../img/ejemplo.pdf" class="download-cv-button" download>
-                                            Descargar CV <i class="bi bi-download icon_cv fs-6"></i>
+                                        <a href="./img/ejemplo.pdf" class="download-cv-button"
+                                            download="Zuleima_Castelar_CV.pdf" aria-label="Descargar Currículum Vitae">
+                                            Descargar CV <i class="bi bi-download icon_cv fs-6" aria-hidden="true"></i>
                                         </a>
-                                        <div id="downloadMessageBox" class="message-box" role="alert">
+                                        <div id="downloadMessageBox" class="message-box" role="status"
+                                            aria-live="polite">
                                             Descarga de CV iniciada. ¡Revisa tus descargas!
                                         </div>
                                     </div>
@@ -341,32 +367,35 @@
                         <h2 class="accordion-header" id="headingFour">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                <i class="bi bi-person icon_style primary secondary me-3"></i>
+                                <i class="bi bi-person icon_style primary secondary me-3" aria-hidden="true"></i>
                                 <span class="nav-text">Sobre mí</span>
                             </button>
                         </h2>
                         <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                             data-bs-parent="#portfolioAccordion">
                             <div class="accordion-body ventana-primary-bg">
-                                <section class="container" id="ventana-opcion4-mobile" aria-label="Sobre mí">
+                                <section class="container" id="ventana-opcion4-mobile"
+                                    aria-label="Información sobre mí">
                                     <div class="row align-items-center mb-4">
                                         <div class="col-md-4 text-center">
                                             <div class="profile-img-container">
-                                                <img src="./img/perfil2.png" alt="Foto de Zuleima Castelar"
-                                                    class="profile-img"> <!-- Corregido aquí -->
+                                                <img src="./img/perfil2.webp" alt="Foto de Zuleima Castelar"
+                                                    class="profile-img" loading="lazy">
                                             </div>
                                         </div>
                                         <div class="secondary col-md-8 profile-header-text text-center text-md-start">
-                                            <h2 class="mb-0 fw-bold">Zuleima Heverlin</h2>
-                                            <h2 class="mb-0 fw-bold">Castelar Moreno</h2>
-                                            <span class="fs-6 web-developer-badge fw-bold">Frontend developer</span>
+                                            <h3 class="mb-0 fw-bold">Zuleima Heverlin</h3>
+                                            <h3 class="mb-0 fw-bold">Castelar Moreno</h3>
+                                            <span class="fs-6 web-developer-badge fw-bold">Developer</span>
                                         </div>
                                     </div>
                                     <div class="row info-section my-3 text-dark">
                                         <div class="col-12">
-                                            <p class="d-inline-block me-3 mb-0 fs-6"><i class="bi bi-globe"></i>
+                                            <p class="d-inline-block me-3 mb-0 fs-6"><i class="bi bi-globe"
+                                                    aria-hidden="true"></i>
                                                 Caracas, Venezuela</p>
-                                            <p class="d-inline-block mb-0 fs-6"><i class="bi bi-person-vcard"></i> Edad:
+                                            <p class="d-inline-block mb-0 fs-6"><i class="bi bi-person-vcard"
+                                                    aria-hidden="true"></i> Edad:
                                                 25</p>
                                         </div>
                                     </div>
@@ -375,30 +404,38 @@
                                             con una gran pasión por el desarrollo web y la creatividad. Actualmente me
                                             encuentro en constante aprendizaje, siempre buscando nuevas formas de
                                             mejorar mis habilidades y conocimientos. Aunque tengo poca experiencia en
-                                            programación, he logrado cumplir con éxito los objetivos y prácticas
+                                            programación, he logrado cumplVer sitio con éxito los objetivos y prácticas
                                             universitarias, como la creación de un sistema que integra bases de datos
                                             MySQL, backend y frontend. Durante tres años trabajé en el área de
                                             Informática, aunque no siempre desarrollando, lo que me permitió conocer
-                                            diferentes aspectos del campo y reafirmar mi interés por el desarrollo de
+                                            diferentes aspectos del campo y reafVer sitiomar mi interés por el
+                                            desarrollo de
                                             Software.</p>
                                     </div>
-                                    <!-- Hobbies -->
+                                    <!-- Hobbies / Intereses -->
                                     <div class="row interests-section justify-content-center my-3">
                                         <div class="col-6 col-md-3 interest-item">
-                                            <div class="interest-icon" tabindex="0"><i class="bi bi-laptop"></i></div>
+                                            <div class="interest-icon" tabindex="0" role="button"
+                                                aria-label="Interés en Desarrollar"><i class="bi bi-laptop"
+                                                    aria-hidden="true"></i></div>
                                             <div class="interest-text">Desarrollar</div>
                                         </div>
                                         <div class="col-6 col-md-3 interest-item">
-                                            <div class="interest-icon" tabindex="0"><i
-                                                    class="bi bi-ticket-perforated"></i></div>
+                                            <div class="interest-icon" tabindex="0" role="button"
+                                                aria-label="Interés en Anime y Series"><i
+                                                    class="bi bi-ticket-perforated" aria-hidden="true"></i></div>
                                             <div class="interest-text">Anime | Series</div>
                                         </div>
                                         <div class="col-6 col-md-3 interest-item">
-                                            <div class="interest-icon" tabindex="0"><i class="bi bi-leaf"></i></div>
+                                            <div class="interest-icon" tabindex="0" role="button"
+                                                aria-label="Interés en Plantas"><i class="bi bi-leaf"
+                                                    aria-hidden="true"></i></div>
                                             <div class="interest-text">Plantas</div>
                                         </div>
                                         <div class="col-6 col-md-3 interest-item">
-                                            <div class="interest-icon" tabindex="0"><i class="bi bi-dribbble"></i></div>
+                                            <div class="interest-icon" tabindex="0" role="button"
+                                                aria-label="Interés en Deportes"><i class="bi bi-dribbble"
+                                                    aria-hidden="true"></i></div>
                                             <div class="interest-text">Deportes</div>
                                         </div>
                                     </div>
@@ -407,71 +444,77 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- Opciones de navegación para escritorio -->
                 <div class="d-none d-lg-flex flex-column fs-2 align-items-center w-100">
                     <!-- Habilidades -->
-                    <div class="nav-item-custom opcion1" tabindex="0">
-                        <i class="bi bi-gear icon_style secondary"></i>
+                    <div class="nav-item-custom opcion1" tabindex="0" role="button" aria-controls="ventana-opcion1">
+                        <i class="bi bi-gear icon_style secondary" aria-hidden="true"></i>
                         <span class="nav-text">Habilidades</span>
                     </div>
                     <!-- Proyectos -->
-                    <div class="nav-item-custom ml-6rem opcion2" tabindex="0">
-                        <i class="bi bi-folder2-open icon_style primary secondary"></i>
+                    <div class="nav-item-custom ml-6rem opcion2" tabindex="0" role="button"
+                        aria-controls="ventana-opcion2">
+                        <i class="bi bi-folder2-open icon_style primary secondary" aria-hidden="true"></i>
                         <span class="nav-text">Proyectos</span>
                     </div>
                     <!-- Experiencia -->
-                    <div class="nav-item-custom ml-8rem opcion3" tabindex="0">
-                        <i class="bi bi-file-earmark-text icon_style secondary"></i>
+                    <div class="nav-item-custom ml-8rem opcion3" tabindex="0" role="button"
+                        aria-controls="ventana-opcion3">
+                        <i class="bi bi-file-earmark-text icon_style secondary" aria-hidden="true"></i>
                         <span class="nav-text">Experiencia</span>
                     </div>
                     <!-- Sobre mí -->
-                    <div class="nav-item-custom mr-3rem opcion4" tabindex="0">
-                        <i class="bi bi-person icon_style primary secondary"></i>
+                    <div class="nav-item-custom mr-3rem opcion4" tabindex="0" role="button"
+                        aria-controls="ventana-opcion4">
+                        <i class="bi bi-person icon_style primary secondary" aria-hidden="true"></i>
                         <span class="nav-text">Sobre mí</span>
                     </div>
                 </div>
+
+                <!-- Ventanas de contenido para escritorio (inicialmente ocultas) -->
                 <!-- Ventana de Habilidades (Escritorio) -->
                 <section class="ventana-opcion1 secondary d-none d-lg-block" id="ventana-opcion1"
-                    aria-label="Habilidades" tabindex="-1">
+                    aria-label="Detalle de Habilidades" tabindex="-1">
                     <div class="container fs-5">
-                        <!-- Frontend -->
+                        <!-- Frontend Skills -->
                         <div class="section-title-container mb-4">
-                            <h2 class="section-title">Frontend</h2>
+                            <h3 class="section-title">Frontend</h3>
                         </div>
                         <div class="icon_opcion1">
                             <div class="skill-category-item d-flex cursor-pointer">
-                                <i class="ri-html5-fill" id="icon-html"></i>
+                                <i class="ri-html5-fill" id="icon-html" aria-hidden="true"></i>
                                 <div>
-                                    <h3 class="fs-5 fw-bold">HTML</h3>
+                                    <h4 class="fs-5 fw-bold">HTML</h4>
                                     <p class="fs-6">Intermedio</p>
                                 </div>
                             </div>
                             <div class="skill-category-item d-flex cursor-pointer">
-                                <i class="ri-css3-fill" id="icon-css"></i>
+                                <i class="ri-css3-fill" id="icon-css" aria-hidden="true"></i>
                                 <div>
-                                    <h3 class="fs-5 fw-bold">CSS</h3>
+                                    <h4 class="fs-5 fw-bold">CSS</h4>
                                     <p class="fs-6">Intermedio</p>
                                 </div>
                             </div>
                             <div class="skill-category-item d-flex cursor-pointer">
-                                <i class="ri-javascript-fill" id="icon-javascript"></i>
+                                <i class="ri-javascript-fill" id="icon-javascript" aria-hidden="true"></i>
                                 <div>
-                                    <h3 class="fs-5 fw-bold">JavaScript</h3>
+                                    <h4 class="fs-5 fw-bold">JavaScript</h4>
                                     <p class="fs-6">Básico</p>
                                 </div>
                             </div>
                         </div>
                         <div class="skills-grid">
                             <div class="skill-bubble d-flex align-items-center">
-                                <i class="ri-bootstrap-fill fs-4" id="icon-bootstrap"></i>
+                                <i class="ri-bootstrap-fill fs-4" id="icon-bootstrap" aria-hidden="true"></i>
                                 <span>Bootstrap</span>
                             </div>
                             <div class="skill-bubble d-flex align-items-center">
-                                <i class="ri-tailwind-css-fill fs-4" id="icon-tailwind"></i>
+                                <i class="ri-tailwind-css-fill fs-4" id="icon-tailwind" aria-hidden="true"></i>
                                 <span>Tailwind</span>
                             </div>
                             <div class="skill-bubble d-flex align-items-center">
-                                <i class="ri-reactjs-fill fs-4" id="icon-react"></i>
+                                <i class="ri-reactjs-fill fs-4" id="icon-react" aria-hidden="true"></i>
                                 <span>React</span>
                             </div>
                             <div class="skill-bubble d-flex align-items-center">
@@ -479,33 +522,33 @@
                                 <span>Ionic</span>
                             </div>
                             <div class="skill-bubble d-flex align-items-center">
-                                <i class="ri-angularjs-fill fs-4" id="icon-angular"></i>
+                                <i class="ri-angularjs-fill fs-4" id="icon-angular" aria-hidden="true"></i>
                                 <span>Angular</span>
                             </div>
                         </div>
-                        <!-- Backend -->
+                        <!-- Backend Skills -->
                         <div class="section-title-container my-4">
-                            <h2 class="section-title">Backend</h2>
+                            <h3 class="section-title">Backend</h3>
                         </div>
                         <div class="icon_opcion1">
                             <div class="skill-category-item d-flex cursor-pointer">
-                                <i class="ri-nodejs-line" id="icon-nodejs"></i>
+                                <i class="ri-nodejs-line" id="icon-nodejs" aria-hidden="true"></i>
                                 <div>
-                                    <h3 class="fs-5 fw-bold">Node.js</h3>
+                                    <h4 class="fs-5 fw-bold">Node.js</h4>
                                     <p class="fs-6">Básico</p>
                                 </div>
                             </div>
                             <div class="skill-category-item d-flex cursor-pointer">
                                 <span id="icon-mysql" aria-label="MySQL"></span>
                                 <div>
-                                    <h3 class="fs-5 fw-bold">MySQL</h3>
+                                    <h4 class="fs-5 fw-bold">MySQL</h4>
                                     <p class="fs-6">Básico</p>
                                 </div>
                             </div>
                         </div>
-                        <!-- Otros -->
+                        <!-- Other Skills -->
                         <div class="section-title-container my-4">
-                            <h2 class="section-title">Otros</h2>
+                            <h3 class="section-title">Otros</h3>
                         </div>
                         <div class="skills-grid">
                             <div class="skill-bubble d-flex align-items-center">
@@ -517,7 +560,7 @@
                                 <span>Canva</span>
                             </div>
                             <div class="skill-bubble d-flex align-items-center">
-                                <i class="bi bi-git fs-5" id="icon-git"></i>
+                                <i class="bi bi-git fs-5" id="icon-git" aria-hidden="true"></i>
                                 <span>Git</span>
                             </div>
                             <span class="skill-bubble">Organizada</span>
@@ -530,25 +573,24 @@
                 </section>
 
                 <!-- Ventana de Proyectos (Escritorio) -->
-                <section class="ventana-opcion2 ventana-primary-bg  d-none d-lg-block" id="ventana-opcion2"
-                    aria-label="Proyectos" tabindex="-1">
+                <section class="ventana-opcion2 ventana-primary-bg d-none d-lg-block" id="ventana-opcion2"
+                    aria-label="Lista de Proyectos" tabindex="-1">
                     <div class="container">
                         <div class="row row-cols-1 g-4 mx-5">
                             <!-- Proyecto 1 -->
                             <div class="col mb-4">
                                 <div class="card h-100 shadow-lg border-0 rounded-3">
-                                    <img src="./img/proyecto1.png" alt="Proyecto Web 1" class="img-fluid card-img-top">
-                                    <div class="card-body d-flex flex-column gap-2 ">
+                                    <img src="./img/proyecto1.webp" alt="Captura de pantalla del Proyecto Web 1"
+                                        class="img-fluid card-img-top" loading="lazy">
+                                    <div class="card-body d-flex flex-column gap-2">
                                         <h4 class="card-title mb-0 secondary fw-bold mt-3">Sitio Web | Diseño de
                                             Interiores</h4>
-                                        <p class="card-text fs-6 mb-0">Se ha desarrollado un sitio web
-                                            integral para un estudio de diseño de interiores. Este
-                                            presenta una página de inicio con una estructura de
-                                            múltiples secciones dedicadas a servicios, portafolio, blog
-                                            y contacto. El diseño del sitio asegura una experiencia de
-                                            usuario responsiva.</p>
-
-                                        <div class="d-flex">
+                                        <p class="card-text fs-6 mb-0">Página web enfocada en la presentación visual de
+                                            ambientes y tendencias para el hogar. Cuenta con una página de inicio y
+                                            varias secciones dedicadas a servicios, portafolio, galería, blog y
+                                            contacto. La estructura está optimizada para dispositivos móviles y de
+                                            escritorio, siguiendo buenas prácticas de diseño web.</p>
+                                        <div class="d-flex flex-wrap">
                                             <span class="tech-badge rounded-pill me-2 mb-2">HTML</span>
                                             <span class="tech-badge rounded-pill me-2 mb-2">CSS</span>
                                             <span class="tech-badge rounded-pill me-2 mb-2">JS</span>
@@ -556,8 +598,10 @@
                                         </div>
                                         <div class="d-flex gap-2 mt-auto justify-content-end">
                                             <a href="https://webhogar.github.io/hogar/" target="_blank"
-                                                class="btn btn-proyecto d-inline-flex align-items-center justify-content-center">
-                                                <i class="bi bi-link-45deg no-italics-link">Ir</i>
+                                                class="btn btn-proyecto d-inline-flex align-items-center justify-content-center"
+                                                aria-label="Ver sitio al Proyecto de Diseño de Interiores">
+                                                <i class="bi bi-link-45deg no-italics-link" aria-hidden="true"></i>Ver
+                                                sitio
                                             </a>
                                         </div>
                                     </div>
@@ -567,12 +611,15 @@
                             <!-- Proyecto 2 -->
                             <div class="col mb-4">
                                 <div class="card h-100 shadow-lg border-0 rounded-3">
-                                    <img src="./img/proyecto1.png" alt="Proyecto Web 1" class="card-img-top">
-                                    <div class="card-body d-flex flex-column gap-2 ">
-                                        <h3 class="card-title mb-0 secondary fw-bold">Página Web</h3>
+                                    <img src="https://placehold.co/600x400/dcdcdc/1d2b53?text=Proyecto+2"
+                                        alt="Captura de pantalla del Proyecto Web 2" class="card-img-top"
+                                        loading="lazy">
+                                    <div class="card-body d-flex flex-column gap-2">
+                                        <h4 class="card-title mb-0 secondary fw-bold">Página Web de Gestión de Proyectos
+                                        </h4>
                                         <p class="card-text fs-6 mb-0">Creada para ofrecer servicios sobre la
                                             gestión de proyectos.</p>
-                                        <div class="d-flex">
+                                        <div class="d-flex flex-wrap">
                                             <span class="tech-badge rounded-pill me-2 mb-2">HTML</span>
                                             <span class="tech-badge rounded-pill me-2 mb-2">CSS</span>
                                             <span class="tech-badge rounded-pill me-2 mb-2">JS</span>
@@ -580,12 +627,16 @@
                                         </div>
                                         <div class="d-flex gap-2 mt-auto justify-content-end">
                                             <a href="#"
-                                                class="btn btn-proyecto d-inline-flex align-items-center justify-content-center">
-                                                <i class="bi bi-link-45deg no-italics-link">Ir</i>
+                                                class="btn btn-proyecto d-inline-flex align-items-center justify-content-center"
+                                                aria-label="Ver sitio al Proyecto de Gestión de Proyectos">
+                                                <i class="bi bi-link-45deg no-italics-link" aria-hidden="true"></i>Ver
+                                                sitio
                                             </a>
                                             <a href="#"
-                                                class="btn btn-outline-proyecto d-inline-flex align-items-center justify-content-center">
-                                                <i class="bi bi-play-circle no-italics-link">Demo</i>
+                                                class="btn btn-outline-proyecto d-inline-flex align-items-center justify-content-center"
+                                                aria-label="Ver Demo del Proyecto de Gestión de Proyectos">
+                                                <i class="bi bi-play-cVer sitiocle no-italics-link"
+                                                    aria-hidden="true"></i>Demo
                                             </a>
                                         </div>
                                     </div>
@@ -595,12 +646,14 @@
                             <!-- Proyecto 3 -->
                             <div class="col mb-4">
                                 <div class="card h-100 shadow-lg border-0 rounded-3">
-                                    <img src="./img/proyecto1.png" alt="Proyecto Web 1" class="card-img-top">
-                                    <div class="card-body d-flex flex-column gap-2 ">
-                                        <h3 class="card-title mb-0 secondary fw-bold">Página Web</h3>
-                                        <p class="card-text fs-6 mb-0">Creada para ofrecer servicios sobre la
-                                            gestión de proyectos.</p>
-                                        <div class="d-flex">
+                                    <img src="https://placehold.co/600x400/dcdcdc/1d2b53?text=Proyecto+3"
+                                        alt="Captura de pantalla del Proyecto Web 3" class="card-img-top"
+                                        loading="lazy">
+                                    <div class="card-body d-flex flex-column gap-2">
+                                        <h4 class="card-title mb-0 secondary fw-bold">Página Web de Servicios</h4>
+                                        <p class="card-text fs-6 mb-0">Un sitio web diseñado para presentar diversos
+                                            servicios profesionales.</p>
+                                        <div class="d-flex flex-wrap">
                                             <span class="tech-badge rounded-pill me-2 mb-2">HTML</span>
                                             <span class="tech-badge rounded-pill me-2 mb-2">CSS</span>
                                             <span class="tech-badge rounded-pill me-2 mb-2">JS</span>
@@ -608,12 +661,16 @@
                                         </div>
                                         <div class="d-flex gap-2 mt-auto justify-content-end">
                                             <a href="#"
-                                                class="btn btn-proyecto d-inline-flex align-items-center justify-content-center">
-                                                <i class="bi bi-link-45deg no-italics-link">Ir</i>
+                                                class="btn btn-proyecto d-inline-flex align-items-center justify-content-center"
+                                                aria-label="Ver sitio al Proyecto de Servicios">
+                                                <i class="bi bi-link-45deg no-italics-link" aria-hidden="true"></i>Ver
+                                                sitio
                                             </a>
                                             <a href="#"
-                                                class="btn btn-outline-proyecto d-inline-flex align-items-center justify-content-center">
-                                                <i class="bi bi-play-circle no-italics-link">Demo</i>
+                                                class="btn btn-outline-proyecto d-inline-flex align-items-center justify-content-center"
+                                                aria-label="Ver Demo del Proyecto de Servicios">
+                                                <i class="bi bi-play-cVer sitiocle no-italics-link"
+                                                    aria-hidden="true"></i>Demo
                                             </a>
                                         </div>
                                     </div>
@@ -622,19 +679,20 @@
                         </div>
                     </div>
                 </section>
+
                 <!-- Ventana de Experiencia (Escritorio) -->
-                <section class="ventana-opcion3 d-none d-lg-block" id="ventana-opcion3" aria-label="Experiencia"
-                    tabindex="-1">
+                <section class="ventana-opcion3 d-none d-lg-block" id="ventana-opcion3"
+                    aria-label="Detalle de Experiencia y Formación" tabindex="-1">
                     <div class="container fs-5">
                         <div class="border-style">
-                            <h2 class="fw-bold secondary mr-3">Formación</h2>
+                            <h3 class="fw-bold secondary mr-3">Formación</h3>
                         </div>
                         <div class="education-item">
-                            <h6 class="secondary fw-bold mb-0 mt-3">UNIVERSIDAD ALEJANDRO DE HUMBOLDT</h6>
+                            <h4 class="secondary fw-bold mb-0 mt-3">UNIVERSIDAD ALEJANDRO DE HUMBOLDT</h4>
                             <p>Ing. en Informática 2023 - Actual</p>
                         </div>
                         <div class="education-item border-style">
-                            <h6 class="secondary fw-bold mb-0">INSTITUTO UNIVERSITARIO DE GERENCIA Y TECNOLOGÍA</h6>
+                            <h4 class="secondary fw-bold mb-0">INSTITUTO UNIVERSITARIO DE GERENCIA Y TECNOLOGÍA</h4>
                             <p class="mb-3">TSU en Informática 2019 - 2022</p>
                         </div>
                         <div class="timeline">
@@ -655,59 +713,71 @@
                             </div>
                         </div>
                         <!-- Botón de descargar CV -->
-                        <a href="../img/ejemplo.pdf" class="download-cv-button" download>
-                            Descargar CV <i class="bi bi-download icon_cv fs-6"></i>
+                        <a href="https://example.com/ejemplo.pdf" class="download-cv-button"
+                            download="Zuleima_Castelar_CV.pdf" aria-label="Descargar Currículum Vitae">
+                            Descargar CV <i class="bi bi-download icon_cv fs-6" aria-hidden="true"></i>
                         </a>
-                        <div id="downloadMessageBox" class="message-box" role="alert">
+                        <div id="downloadMessageBox" class="message-box" role="status" aria-live="polite">
                             Descarga de CV iniciada. ¡Revisa tus descargas!
                         </div>
                     </div>
                 </section>
-                <!-- Ventana de Sobre mi (Escritorio) -->
+
+                <!-- Ventana de Sobre mí (Escritorio) -->
                 <section class="ventana-opcion4 container ventana-primary-bg d-none d-lg-block" id="ventana-opcion4"
-                    aria-label="Sobre mí" tabindex="-1">
+                    aria-label="Información sobre mí" tabindex="-1">
                     <div class="d-flex align-items-center mb-4">
                         <div class="profile-img-container">
-                            <img src="./img/perfil2.png" alt="Foto de Zuleima Castelar" class="profile-img">
+                            <img src="./img/perfil2.webp" alt="Foto de Zuleima Castelar" class="profile-img"
+                                loading="lazy">
                         </div>
                         <div class="secondary profile-header-text">
-                            <h2 class="mb-0 fw-bold ">Zuleima Heverlin</h2>
-                            <h2 class="mb-0 fw-bold ">Castelar Moreno</h2>
-                            <span class="fs-5 web-developer-badge fw-bold">Frontend developer</span>
+                            <h3 class="mb-0 fw-bold">Zuleima Heverlin</h3>
+                            <h3 class="mb-0 fw-bold">Castelar Moreno</h3>
+                            <span class="fs-5 web-developer-badge fw-bold">Developer</span>
                         </div>
                     </div>
                     <div class="row info-section mt-4 text-dark">
                         <div class="col-12">
-                            <p class="d-inline-block me-3 mb-0 fs-6"><i class="bi bi-globe"></i> Caracas, Venezuela</p>
-                            <p class="d-inline-block mb-0 fs-6"><i class="bi bi-person-vcard"></i> Edad: 25</p>
+                            <p class="d-inline-block me-3 mb-0 fs-6"><i class="bi bi-globe" aria-hidden="true"></i>
+                                Caracas, Venezuela</p>
+                            <p class="d-inline-block mb-0 fs-6"><i class="bi bi-person-vcard" aria-hidden="true"></i>
+                                Edad: 25</p>
                         </div>
                     </div>
                     <div class="description-section text-dark">
                         <p>Soy estudiante de Ingeniería en Informática, nacida el 8 de abril del 2000, con una gran
                             pasión por el desarrollo web y la creatividad. Actualmente me encuentro en constante
                             aprendizaje, siempre buscando nuevas formas de mejorar mis habilidades y conocimientos.
-                            Aunque tengo poca experiencia en programación, he logrado cumplir con éxito los objetivos y
+                            Aunque tengo poca experiencia en programación, he logrado cumplVer sitio con éxito los
+                            objetivos y
                             prácticas universitarias, como la creación de un sistema que integra bases de datos MySQL,
                             backend y frontend. Durante tres años trabajé en el área de Informática, aunque no siempre
-                            desarrollando, lo que me permitió conocer diferentes aspectos del campo y reafirmar mi
+                            desarrollando, lo que me permitió conocer diferentes aspectos del campo y reafVer sitiomar
+                            mi
                             interés por el desarrollo de Software.</p>
                     </div>
-                    <!-- Hobbies -->
+                    <!-- Hobbies / Intereses -->
                     <div class="row interests-section justify-content-center my-3">
                         <div class="col-6 col-md-3 interest-item">
-                            <div class="interest-icon" tabindex="0"><i class="bi bi-laptop"></i></div>
+                            <div class="interest-icon" tabindex="0" role="button" aria-label="Interés en Desarrollar"><i
+                                    class="bi bi-laptop" aria-hidden="true"></i></div>
                             <div class="interest-text">Desarrollar</div>
                         </div>
                         <div class="col-6 col-md-3 interest-item">
-                            <div class="interest-icon" tabindex="0"><i class="bi bi-ticket-perforated"></i></div>
+                            <div class="interest-icon" tabindex="0" role="button"
+                                aria-label="Interés en Anime y Series"><i class="bi bi-ticket-perforated"
+                                    aria-hidden="true"></i></div>
                             <div class="interest-text">Anime | Series</div>
                         </div>
                         <div class="col-6 col-md-3 interest-item">
-                            <div class="interest-icon" tabindex="0"><i class="bi bi-leaf"></i></div>
+                            <div class="interest-icon" tabindex="0" role="button" aria-label="Interés en Plantas"><i
+                                    class="bi bi-leaf" aria-hidden="true"></i></div>
                             <div class="interest-text">Plantas</div>
                         </div>
                         <div class="col-6 col-md-3 interest-item">
-                            <div class="interest-icon" tabindex="0"><i class="bi bi-dribbble"></i></div>
+                            <div class="interest-icon" tabindex="0" role="button" aria-label="Interés en Deportes"><i
+                                    class="bi bi-dribbble" aria-hidden="true"></i></div>
                             <div class="interest-text">Deportes</div>
                         </div>
                     </div>
@@ -716,9 +786,10 @@
         </main>
     </div>
 
+    <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-        xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <!-- Custom JavaScript -->
     <script src="script.js"></script>
 </body>
 
