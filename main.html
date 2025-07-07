@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-custom">
+        <!-- Sidebar -->
+        <aside class="sidebar d-flex flex-column align-items-center" aria-label="Barra lateral">
+            <div class="fs-2 fw-bold secondary mb-4 mb-md-5">
+                MI<span class="tertiary">Portafolio</span>
+            </div>
+            <!-- Perfil -->
+            <div class="profile-section d-flex flex-column align-items-center mb-4">
+                <div class="profile-image-wrapper">
+                    <img src="../img/perfil.png" alt="Foto de perfil de Zuleima Castelar"
+                        class="img-fluid profile-image">
+                </div>
+            </div>
+            <!-- Redes Sociales -->
+            <nav class="social-icons d-flex gap-3" aria-label="Redes sociales">
+                <a href="https://wa.me/584241288604" target="_blank" class="social-icon-link text-decoration-none"
+                    aria-label="WhatsApp">
+                    <i class="ri-whatsapp-fill"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/zuleimacastelar/" target="_blank"
+                    class="social-icon-link mx-2 text-decoration-none" aria-label="LinkedIn">
+                    <i class="ri-linkedin-box-fill"></i>
+                </a>
+                <a href="mailto:zulycas00@gmail.com" class="social-icon-link text-decoration-none"
+                    aria-label="Correo electrónico">
+                    <i class="bi bi-envelope-fill"></i>
+                </a>
+            </nav>
+        </aside>
+        <!-- Contenido Principal -->
+        <main class="main-content d-flex flex-column justify-content-center">
+            <section class="d-flex flex-column fs-2 align-items-center" aria-label="Navegación principal">
+                <!-- Ventana y opciones para móvil y tablets -->
+                <div class="accordion d-lg-none w-100" id="portfolioAccordion">
+                    <!-- Habilidades -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                <i class="bi bi-gear icon_style secondary me-3"></i>
+                                <span class="nav-text">Habilidades</span>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#portfolioAccordion">
+                            <div class="accordion-body">
+                                <section class="secondary" id="ventana-opcion1-mobile" aria-label="Habilidades">
+                                    <div class="container fs-5">
+                                        <!-- Frontend -->
+                                        <div class="section-title-container mb-4">
+                                            <h2 class="section-title">Frontend</h2>
+                                        </div>
+                                        <div class="icon_opcion1">
+                                            <div class="skill-category-item d-flex cursor-pointer">
+                                                <i class="ri-html5-fill" id="icon-html"></i>
+                                                <div>
+                                                    <h3 class="fs-5 fw-bold">HTML</h3>
+                                                    <p class="fs-6">Intermedio</p>
+                                                </div>
+                                            </div>
+                                            <div class="skill-category-item d-flex cursor-pointer">
+                                                <i class="ri-css3-fill" id="icon-css"></i>
+                                                <div>
+                                                    <h3 class="fs-5 fw-bold">CSS</h3>
+                                                    <p class="fs-6">Intermedio</p>
+                                                </div>
+                                            </div>
+                                            <div class="skill-category-item d-flex cursor-pointer">
+                                                <i class="ri-javascript-fill" id="icon-javascript"></i>
+                                                <div>
+                                                    <h3 class="fs-5 fw-bold">JavaScript</h3>
+                                                    <p class="fs-6">Básico</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="skills-grid">
+                                            <div class="skill-bubble d-flex align-items-center">
+                                                <i class="ri-bootstrap-fill fs-4" id="icon-bootstrap"></i>
+                                                <span>Bootstrap</span>
+                                            </div>
+                                            <div class="skill-bubble d-flex align-items-center">
+                                                <i class="ri-tailwind-css-fill fs-4" id="icon-tailwind"></i>
+                                                <span>Tailwind</span>
+                                            </div>
+                                            <div class="skill-bubble d-flex align-items-center">
+                                                <i class="ri-reactjs-fill fs-4" id="icon-react"></i>
+                                                <span>React</span>
+                                            </div>
+                                            <div class="skill-bubble d-flex align-items-center">
+                                                <span id="icon-ionic" aria-label="Ionic"></span>
+                                                <span>Ionic</span>
+                                            </div>
+                                            <div class="skill-bubble d-flex align-items-center">
+                                                <i class="ri-angularjs-fill fs-4" id="icon-angular"></i>
+                                                <span>Angular</span>
+                                            </div>
+                                        </div>
+                                        <!-- Backend -->
+                                        <div class="section-title-container my-4">
+                                            <h2 class="section-title">Backend</h2>
+                                        </div>
+                                        <div class="icon_opcion1">
+                                            <div class="skill-category-item d-flex cursor-pointer">
+                                                <i class="ri-nodejs-line" id="icon-nodejs"></i>
+                                                <div>
+                                                    <h3 class="fs-5 fw-bold">Node.js</h3>
+                                                    <p class="fs-6">Básico</p>
+                                                </div>
+                                            </div>
+                                            <div class="skill-category-item d-flex cursor-pointer">
+                                                <span id="icon-mysql" aria-label="MySQL"></span>
+                                                <div>
+                                                    <h3 class="fs-5 fw-bold">MySQL</h3>
+                                                    <p class="fs-6">Básico</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Otros -->
+                                        <div class="section-title-container my-4">
+                                            <h2 class="section-title">Otros</h2>
+                                        </div>
+                                        <div class="skills-grid">
+                                            <div class="skill-bubble d-flex align-items-center">
+                                                <span id="icon-vscode" aria-label="VSCode"></span>
+                                                <span>VSCode</span>
+                                            </div>
+                                            <div class="skill-bubble d-flex align-items-center">
+                                                <span id="icon-canva" aria-label="Canva"></span>
+                                                <span>Canva</span>
+                                            </div>
+                                            <div class="skill-bubble d-flex align-items-center">
+                                                <i class="bi bi-git fs-5" id="icon-git"></i>
+                                                <span>Git</span>
+                                            </div>
+                                            <span class="skill-bubble">Organizada</span>
+                                            <span class="skill-bubble">Responsable</span>
+                                            <span class="skill-bubble">Creativa</span>
+                                            <span class="skill-bubble">Trabajo en Equipo</span>
+                                            <span class="skill-bubble">Aprendizaje Continuo</span>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyectos  -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <i class="bi bi-folder2-open icon_style primary secondary me-3"></i>
+                                <span class="nav-text">Proyectos</span>
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#portfolioAccordion">
+                            <div class="accordion-body ventana-primary-bg">
+                                <section id="ventana-opcion2-mobile" aria-label="Proyectos" tabindex="-1">
+                                    <div class="container">
+                                        <div class="row row-cols-1 g-4">
+                                            <!-- Proyecto 1 -->
+                                            <div class="col mb-4">
+                                                <div class="card h-100 shadow-lg border-0 rounded-3">
+                                                    <img src="./img/proyecto1.png" alt="Proyecto Web 1"
+                                                        class="card-img-top">
+                                                    <div class="card-body d-flex flex-column gap-2 ">
+                                                        <h3 class="card-title mb-0 secondary fw-bold">Sitio Web | Diseño
+                                                            de Interiores</h3>
+                                                        <p class="card-text fs-6 mb-0">Se ha desarrollado un sitio web
+                                                            integral para un estudio de diseño de interiores. Este
+                                                            presenta una página de inicio con una estructura de
+                                                            múltiples secciones dedicadas a servicios, portafolio, blog
+                                                            y contacto. El diseño del sitio asegura una experiencia de
+                                                            usuario responsiva. </p>
+                                                        <div class="d-flex">
+                                                            <span class="tech-badge rounded-pill me-2 mb-2">HTML</span>
+                                                            <span class="tech-badge rounded-pill me-2 mb-2">CSS</span>
+                                                            <span class="tech-badge rounded-pill me-2 mb-2">JS</span>
+                                                            <span
+                                                                class="tech-badge rounded-pill me-2 mb-2">Bootstrap</span>
+                                                        </div>
+                                                        <div class="d-flex gap-2 mt-auto justify-content-end">
+                                                            <a href="https://webhogar.github.io/hogar/" target="_blank"
+                                                                class="btn btn-proyecto d-inline-flex align-items-center justify-content-center">
+                                                                <i class="bi bi-link-45deg no-italics-link">Ir</i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card mb-3" style="max-width: 540px;">
+                                                <div class="row g-0">
+                                                    <div class="col-md-4">
+                                                        <img src="..." class="img-fluid rounded-start" alt="...">
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Card title</h5>
+                                                            <p class="card-text">This is a wider card with supporting
+                                                                text below as a natural lead-in to additional content.
+                                                                This content is a little bit longer.</p>
+                                                            <p class="card-text"><small class="text-body-secondary">Last
+                                                                    updated 3 mins ago</small></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Proyecto 2 -->
+                                            <div class="col mb-4">
+                                                <div class="card h-100 shadow-lg border-0 rounded-3">
+                                                    <img src="./img/proyecto1.png" alt="Proyecto Web 1"
+                                                        class="card-img-top">
+                                                    <div class="card-body d-flex flex-column gap-2 ">
+                                                        <h3 class="card-title mb-0 secondary fw-bold">Sitio Web Diseño
+                                                            de Interiores</h3>
+                                                        <p class="card-text fs-6 mb-0">Se ha desarrollado un sitio web
+                                                            integral para un estudio de diseño de interiores. Este
+                                                            presenta una página de inicio con una estructura de
+                                                            múltiples secciones dedicadas a servicios, portafolio, blog
+                                                            y contacto. El diseño del sitio asegura una experiencia de
+                                                            usuario responsiva.</p>
+                                                        <div class="d-flex">
+                                                            <span class="tech-badge rounded-pill me-2 mb-2">HTML</span>
+                                                            <span class="tech-badge rounded-pill me-2 mb-2">CSS</span>
+                                                            <span class="tech-badge rounded-pill me-2 mb-2">JS</span>
+                                                            <span
+                                                                class="tech-badge rounded-pill me-2 mb-2">Bootstrap</span>
+                                                        </div>
+                                                        <div class="d-flex gap-2 mt-auto justify-content-end">
+                                                            <a href="#"
+                                                                class="btn btn-proyecto d-inline-flex align-items-center justify-content-center">
+                                                                <i class="bi bi-link-45deg no-italics-link">Ir</i>
+                                                            </a>
+                                                            <a href="#"
+                                                                class="btn btn-outline-proyecto d-inline-flex align-items-center justify-content-center">
+                                                                <i class="bi bi-play-circle no-italics-link">Demo</i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Proyecto 3 -->
+                                            <div class="col mb-4">
+                                                <div class="card h-100 shadow-lg border-0 rounded-3">
+                                                    <img src="./img/proyecto1.png" alt="Proyecto Web 1"
+                                                        class="card-img-top">
+                                                    <div class="card-body d-flex flex-column gap-2 ">
+                                                        <h3 class="card-title mb-0 secondary fw-bold">Página Web</h3>
+                                                        <p class="card-text fs-6 mb-0">Creada para ofrecer servicios
+                                                            sobre la
+                                                            gestión de proyectos.</p>
+                                                        <div class="d-flex">
+                                                            <span class="tech-badge rounded-pill me-2 mb-2">HTML</span>
+                                                            <span class="tech-badge rounded-pill me-2 mb-2">CSS</span>
+                                                            <span class="tech-badge rounded-pill me-2 mb-2">JS</span>
+                                                            <span
+                                                                class="tech-badge rounded-pill me-2 mb-2">Bootstrap</span>
+                                                        </div>
+                                                        <div class="d-flex gap-2 mt-auto justify-content-end">
+                                                            <a href="#"
+                                                                class="btn btn-proyecto d-inline-flex align-items-center justify-content-center">
+                                                                <i class="bi bi-link-45deg no-italics-link">Ir</i>
+                                                            </a>
+                                                            <a href="#"
+                                                                class="btn btn-outline-proyecto d-inline-flex align-items-center justify-content-center">
+                                                                <i class="bi bi-play-circle no-italics-link">Demo</i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experiencia -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <i class="bi bi-file-earmark-text icon_style secondary me-3"></i>
+                                <span class="nav-text">Experiencia</span>
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#portfolioAccordion">
+                            <div class="accordion-body">
+                                <section id="ventana-opcion3-mobile" aria-label="Experiencia">
+                                    <div class="container fs-6">
+                                        <div class="border-style">
+                                            <h2 class="fw-bold secondary mr-3">Formación</h2>
+                                        </div>
+                                        <div class="education-item">
+                                            <h6 class="secondary fw-bold mb-0 mt-3">UNIVERSIDAD ALEJANDRO DE HUMBOLDT
+                                            </h6>
+                                            <p>Ing. en Informática 2023 - Actual</p>
+                                        </div>
+                                        <div class="education-item border-style">
+                                            <h6 class="secondary fw-bold mb-0">INSTITUTO UNIVERSITARIO DE GERENCIA Y
+                                                TECNOLOGÍA</h6>
+                                            <p class="mb-3">TSU en Informática 2019 - 2022</p>
+                                        </div>
+                                        <div class="timeline">
+                                            <div class="timeline-item my-5">
+                                                <div class="timeline-date">2021 - 2022</div>
+                                                <div class="timeline-content">
+                                                    <h5 class="secondary fw-bold">Desarrolladora Web | Fibex Telecom
+                                                    </h5>
+                                                    <ul>
+                                                        <li>Responsable de crear y mantener 3 sitios web: Fibex,
+                                                            CableHogar y Conex Perú, utilizando HTML, CSS, TypeScript y
+                                                            colaborando con diseñadores gráficos.</li>
+                                                        <li>Colaboré en el desarrollo de una aplicación móvil llamada
+                                                            Fibex Oficina Móvil, utilizando Ionic/Angular.</li>
+                                                        <li>Finalicé creando una página para la grilla de programación
+                                                            de un servicio de streaming Fibexplay.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Botón de descargar CV -->
+                                        <a href="../img/ejemplo.pdf" class="download-cv-button" download>
+                                            Descargar CV <i class="bi bi-download icon_cv fs-6"></i>
+                                        </a>
+                                        <div id="downloadMessageBox" class="message-box" role="alert">
+                                            Descarga de CV iniciada. ¡Revisa tus descargas!
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sobre mí -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <i class="bi bi-person icon_style primary secondary me-3"></i>
+                                <span class="nav-text">Sobre mí</span>
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#portfolioAccordion">
+                            <div class="accordion-body ventana-primary-bg">
+                                <section class="container" id="ventana-opcion4-mobile" aria-label="Sobre mí">
+                                    <div class="row align-items-center mb-4">
+                                        <div class="col-md-4 text-center">
+                                            <div class="profile-img-container">
+                                                <img src="../img/perfil2.png" alt="Foto de Zuleima Castelar"
+                                                    class="profile-img"> <!-- Corregido aquí -->
+                                            </div>
+                                        </div>
+                                        <div class="secondary col-md-8 profile-header-text text-center text-md-start">
+                                            <h2 class="mb-0 fw-bold">Zuleima Heverlin</h2>
+                                            <h2 class="mb-0 fw-bold">Castelar Moreno</h2>
+                                            <span class="fs-6 web-developer-badge fw-bold">Frontend developer</span>
+                                        </div>
+                                    </div>
+                                    <div class="row info-section my-3 text-dark">
+                                        <div class="col-12">
+                                            <p class="d-inline-block me-3 mb-0 fs-6"><i class="bi bi-globe"></i>
+                                                Caracas, Venezuela</p>
+                                            <p class="d-inline-block mb-0 fs-6"><i class="bi bi-person-vcard"></i> Edad:
+                                                25</p>
+                                        </div>
+                                    </div>
+                                    <div class="description-section text-dark">
+                                        <p>Soy estudiante de Ingeniería en Informática, nacida el 8 de abril del 2000,
+                                            con una gran pasión por el desarrollo web y la creatividad. Actualmente me
+                                            encuentro en constante aprendizaje, siempre buscando nuevas formas de
+                                            mejorar mis habilidades y conocimientos. Aunque tengo poca experiencia en
+                                            programación, he logrado cumplir con éxito los objetivos y prácticas
+                                            universitarias, como la creación de un sistema que integra bases de datos
+                                            MySQL, backend y frontend. Durante tres años trabajé en el área de
+                                            Informática, aunque no siempre desarrollando, lo que me permitió conocer
+                                            diferentes aspectos del campo y reafirmar mi interés por el desarrollo de
+                                            Software.</p>
+                                    </div>
+                                    <!-- Hobbies -->
+                                    <div class="row interests-section justify-content-center my-3">
+                                        <div class="col-6 col-md-3 interest-item">
+                                            <div class="interest-icon" tabindex="0"><i class="bi bi-laptop"></i></div>
+                                            <div class="interest-text">Desarrollar</div>
+                                        </div>
+                                        <div class="col-6 col-md-3 interest-item">
+                                            <div class="interest-icon" tabindex="0"><i
+                                                    class="bi bi-ticket-perforated"></i></div>
+                                            <div class="interest-text">Anime | Series</div>
+                                        </div>
+                                        <div class="col-6 col-md-3 interest-item">
+                                            <div class="interest-icon" tabindex="0"><i class="bi bi-leaf"></i></div>
+                                            <div class="interest-text">Plantas</div>
+                                        </div>
+                                        <div class="col-6 col-md-3 interest-item">
+                                            <div class="interest-icon" tabindex="0"><i class="bi bi-dribbble"></i></div>
+                                            <div class="interest-text">Deportes</div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Opciones de navegación para escritorio -->
+                <div class="d-none d-lg-flex flex-column fs-2 align-items-center w-100">
+                    <!-- Habilidades -->
+                    <div class="nav-item-custom opcion1" tabindex="0">
+                        <i class="bi bi-gear icon_style secondary"></i>
+                        <span class="nav-text">Habilidades</span>
+                    </div>
+                    <!-- Proyectos -->
+                    <div class="nav-item-custom ml-6rem opcion2" tabindex="0">
+                        <i class="bi bi-folder2-open icon_style primary secondary"></i>
+                        <span class="nav-text">Proyectos</span>
+                    </div>
+                    <!-- Experiencia -->
+                    <div class="nav-item-custom ml-8rem opcion3" tabindex="0">
+                        <i class="bi bi-file-earmark-text icon_style secondary"></i>
+                        <span class="nav-text">Experiencia</span>
+                    </div>
+                    <!-- Sobre mí -->
+                    <div class="nav-item-custom mr-3rem opcion4" tabindex="0">
+                        <i class="bi bi-person icon_style primary secondary"></i>
+                        <span class="nav-text">Sobre mí</span>
+                    </div>
+                </div>
+                <!-- Ventana de Habilidades (Escritorio) -->
+                <section class="ventana-opcion1 secondary d-none d-lg-block" id="ventana-opcion1"
+                    aria-label="Habilidades" tabindex="-1">
+                    <div class="container fs-5">
+                        <!-- Frontend -->
+                        <div class="section-title-container mb-4">
+                            <h2 class="section-title">Frontend</h2>
+                        </div>
+                        <div class="icon_opcion1">
+                            <div class="skill-category-item d-flex cursor-pointer">
+                                <i class="ri-html5-fill" id="icon-html"></i>
+                                <div>
+                                    <h3 class="fs-5 fw-bold">HTML</h3>
+                                    <p class="fs-6">Intermedio</p>
+                                </div>
+                            </div>
+                            <div class="skill-category-item d-flex cursor-pointer">
+                                <i class="ri-css3-fill" id="icon-css"></i>
+                                <div>
+                                    <h3 class="fs-5 fw-bold">CSS</h3>
+                                    <p class="fs-6">Intermedio</p>
+                                </div>
+                            </div>
+                            <div class="skill-category-item d-flex cursor-pointer">
+                                <i class="ri-javascript-fill" id="icon-javascript"></i>
+                                <div>
+                                    <h3 class="fs-5 fw-bold">JavaScript</h3>
+                                    <p class="fs-6">Básico</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills-grid">
+                            <div class="skill-bubble d-flex align-items-center">
+                                <i class="ri-bootstrap-fill fs-4" id="icon-bootstrap"></i>
+                                <span>Bootstrap</span>
+                            </div>
+                            <div class="skill-bubble d-flex align-items-center">
+                                <i class="ri-tailwind-css-fill fs-4" id="icon-tailwind"></i>
+                                <span>Tailwind</span>
+                            </div>
+                            <div class="skill-bubble d-flex align-items-center">
+                                <i class="ri-reactjs-fill fs-4" id="icon-react"></i>
+                                <span>React</span>
+                            </div>
+                            <div class="skill-bubble d-flex align-items-center">
+                                <span id="icon-ionic" aria-label="Ionic"></span>
+                                <span>Ionic</span>
+                            </div>
+                            <div class="skill-bubble d-flex align-items-center">
+                                <i class="ri-angularjs-fill fs-4" id="icon-angular"></i>
+                                <span>Angular</span>
+                            </div>
+                        </div>
+                        <!-- Backend -->
+                        <div class="section-title-container my-4">
+                            <h2 class="section-title">Backend</h2>
+                        </div>
+                        <div class="icon_opcion1">
+                            <div class="skill-category-item d-flex cursor-pointer">
+                                <i class="ri-nodejs-line" id="icon-nodejs"></i>
+                                <div>
+                                    <h3 class="fs-5 fw-bold">Node.js</h3>
+                                    <p class="fs-6">Básico</p>
+                                </div>
+                            </div>
+                            <div class="skill-category-item d-flex cursor-pointer">
+                                <span id="icon-mysql" aria-label="MySQL"></span>
+                                <div>
+                                    <h3 class="fs-5 fw-bold">MySQL</h3>
+                                    <p class="fs-6">Básico</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Otros -->
+                        <div class="section-title-container my-4">
+                            <h2 class="section-title">Otros</h2>
+                        </div>
+                        <div class="skills-grid">
+                            <div class="skill-bubble d-flex align-items-center">
+                                <span id="icon-vscode" aria-label="VSCode"></span>
+                                <span>VSCode</span>
+                            </div>
+                            <div class="skill-bubble d-flex align-items-center">
+                                <span id="icon-canva" aria-label="Canva"></span>
+                                <span>Canva</span>
+                            </div>
+                            <div class="skill-bubble d-flex align-items-center">
+                                <i class="bi bi-git fs-5" id="icon-git"></i>
+                                <span>Git</span>
+                            </div>
+                            <span class="skill-bubble">Organizada</span>
+                            <span class="skill-bubble">Responsable</span>
+                            <span class="skill-bubble">Creativa</span>
+                            <span class="skill-bubble">Trabajo en Equipo</span>
+                            <span class="skill-bubble">Aprendizaje Continuo</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Ventana de Proyectos (Escritorio) -->
+                <section class="ventana-opcion2 ventana-primary-bg  d-none d-lg-block" id="ventana-opcion2"
+                    aria-label="Proyectos" tabindex="-1">
+                    <div class="container">
+                        <div class="row row-cols-1 g-4 mx-5">
+                            <!-- Proyecto 1 -->
+                            <div class="col mb-4">
+                                <div class="card h-100 shadow-lg border-0 rounded-3">
+                                    <img src="./img/proyecto1.png" alt="Proyecto Web 1" class="img-fluid card-img-top">
+                                    <div class="card-body d-flex flex-column gap-2 ">
+                                        <h4 class="card-title mb-0 secondary fw-bold mt-3">Sitio Web | Diseño de
+                                            Interiores</h4>
+                                        <p class="card-text fs-6 mb-0">Se ha desarrollado un sitio web
+                                            integral para un estudio de diseño de interiores. Este
+                                            presenta una página de inicio con una estructura de
+                                            múltiples secciones dedicadas a servicios, portafolio, blog
+                                            y contacto. El diseño del sitio asegura una experiencia de
+                                            usuario responsiva.</p>
+
+                                        <div class="d-flex">
+                                            <span class="tech-badge rounded-pill me-2 mb-2">HTML</span>
+                                            <span class="tech-badge rounded-pill me-2 mb-2">CSS</span>
+                                            <span class="tech-badge rounded-pill me-2 mb-2">JS</span>
+                                            <span class="tech-badge rounded-pill me-2 mb-2">Bootstrap</span>
+                                        </div>
+                                        <div class="d-flex gap-2 mt-auto justify-content-end">
+                                            <a href="https://webhogar.github.io/hogar/" target="_blank"
+                                                class="btn btn-proyecto d-inline-flex align-items-center justify-content-center">
+                                                <i class="bi bi-link-45deg no-italics-link">Ir</i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Proyecto 2 -->
+                            <div class="col mb-4">
+                                <div class="card h-100 shadow-lg border-0 rounded-3">
+                                    <img src="./img/proyecto1.png" alt="Proyecto Web 1" class="card-img-top">
+                                    <div class="card-body d-flex flex-column gap-2 ">
+                                        <h3 class="card-title mb-0 secondary fw-bold">Página Web</h3>
+                                        <p class="card-text fs-6 mb-0">Creada para ofrecer servicios sobre la
+                                            gestión de proyectos.</p>
+                                        <div class="d-flex">
+                                            <span class="tech-badge rounded-pill me-2 mb-2">HTML</span>
+                                            <span class="tech-badge rounded-pill me-2 mb-2">CSS</span>
+                                            <span class="tech-badge rounded-pill me-2 mb-2">JS</span>
+                                            <span class="tech-badge rounded-pill me-2 mb-2">Bootstrap</span>
+                                        </div>
+                                        <div class="d-flex gap-2 mt-auto justify-content-end">
+                                            <a href="#"
+                                                class="btn btn-proyecto d-inline-flex align-items-center justify-content-center">
+                                                <i class="bi bi-link-45deg no-italics-link">Ir</i>
+                                            </a>
+                                            <a href="#"
+                                                class="btn btn-outline-proyecto d-inline-flex align-items-center justify-content-center">
+                                                <i class="bi bi-play-circle no-italics-link">Demo</i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Proyecto 3 -->
+                            <div class="col mb-4">
+                                <div class="card h-100 shadow-lg border-0 rounded-3">
+                                    <img src="./img/proyecto1.png" alt="Proyecto Web 1" class="card-img-top">
+                                    <div class="card-body d-flex flex-column gap-2 ">
+                                        <h3 class="card-title mb-0 secondary fw-bold">Página Web</h3>
+                                        <p class="card-text fs-6 mb-0">Creada para ofrecer servicios sobre la
+                                            gestión de proyectos.</p>
+                                        <div class="d-flex">
+                                            <span class="tech-badge rounded-pill me-2 mb-2">HTML</span>
+                                            <span class="tech-badge rounded-pill me-2 mb-2">CSS</span>
+                                            <span class="tech-badge rounded-pill me-2 mb-2">JS</span>
+                                            <span class="tech-badge rounded-pill me-2 mb-2">Bootstrap</span>
+                                        </div>
+                                        <div class="d-flex gap-2 mt-auto justify-content-end">
+                                            <a href="#"
+                                                class="btn btn-proyecto d-inline-flex align-items-center justify-content-center">
+                                                <i class="bi bi-link-45deg no-italics-link">Ir</i>
+                                            </a>
+                                            <a href="#"
+                                                class="btn btn-outline-proyecto d-inline-flex align-items-center justify-content-center">
+                                                <i class="bi bi-play-circle no-italics-link">Demo</i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Ventana de Experiencia (Escritorio) -->
+                <section class="ventana-opcion3 d-none d-lg-block" id="ventana-opcion3" aria-label="Experiencia"
+                    tabindex="-1">
+                    <div class="container fs-5">
+                        <div class="border-style">
+                            <h2 class="fw-bold secondary mr-3">Formación</h2>
+                        </div>
+                        <div class="education-item">
+                            <h6 class="secondary fw-bold mb-0 mt-3">UNIVERSIDAD ALEJANDRO DE HUMBOLDT</h6>
+                            <p>Ing. en Informática 2023 - Actual</p>
+                        </div>
+                        <div class="education-item border-style">
+                            <h6 class="secondary fw-bold mb-0">INSTITUTO UNIVERSITARIO DE GERENCIA Y TECNOLOGÍA</h6>
+                            <p class="mb-3">TSU en Informática 2019 - 2022</p>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline-item my-5">
+                                <div class="timeline-date">2021 - 2022</div>
+                                <div class="timeline-content">
+                                    <h5 class="secondary fw-bold">Desarrolladora Web | Fibex Telecom</h5>
+                                    <ul>
+                                        <li>Responsable de crear y mantener 3 sitios web: Fibex, CableHogar y Conex
+                                            Perú, utilizando HTML, CSS, TypeScript y colaborando con diseñadores
+                                            gráficos.</li>
+                                        <li>Colaboré en el desarrollo de una aplicación móvil llamada Fibex Oficina
+                                            Móvil, utilizando Ionic/Angular.</li>
+                                        <li>Finalicé creando una página para la grilla de programación de un servicio de
+                                            streaming Fibexplay.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Botón de descargar CV -->
+                        <a href="../img/ejemplo.pdf" class="download-cv-button" download>
+                            Descargar CV <i class="bi bi-download icon_cv fs-6"></i>
+                        </a>
+                        <div id="downloadMessageBox" class="message-box" role="alert">
+                            Descarga de CV iniciada. ¡Revisa tus descargas!
+                        </div>
+                    </div>
+                </section>
+                <!-- Ventana de Sobre mi (Escritorio) -->
+                <section class="ventana-opcion4 container ventana-primary-bg d-none d-lg-block" id="ventana-opcion4"
+                    aria-label="Sobre mí" tabindex="-1">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="profile-img-container">
+                            <img src="../img/perfil2.png" alt="Foto de Zuleima Castelar" class="profile-img">
+                        </div>
+                        <div class="secondary profile-header-text">
+                            <h2 class="mb-0 fw-bold ">Zuleima Heverlin</h2>
+                            <h2 class="mb-0 fw-bold ">Castelar Moreno</h2>
+                            <span class="fs-5 web-developer-badge fw-bold">Frontend developer</span>
+                        </div>
+                    </div>
+                    <div class="row info-section mt-4 text-dark">
+                        <div class="col-12">
+                            <p class="d-inline-block me-3 mb-0 fs-6"><i class="bi bi-globe"></i> Caracas, Venezuela</p>
+                            <p class="d-inline-block mb-0 fs-6"><i class="bi bi-person-vcard"></i> Edad: 25</p>
+                        </div>
+                    </div>
+                    <div class="description-section text-dark">
+                        <p>Soy estudiante de Ingeniería en Informática, nacida el 8 de abril del 2000, con una gran
+                            pasión por el desarrollo web y la creatividad. Actualmente me encuentro en constante
+                            aprendizaje, siempre buscando nuevas formas de mejorar mis habilidades y conocimientos.
+                            Aunque tengo poca experiencia en programación, he logrado cumplir con éxito los objetivos y
+                            prácticas universitarias, como la creación de un sistema que integra bases de datos MySQL,
+                            backend y frontend. Durante tres años trabajé en el área de Informática, aunque no siempre
+                            desarrollando, lo que me permitió conocer diferentes aspectos del campo y reafirmar mi
+                            interés por el desarrollo de Software.</p>
+                    </div>
+                    <!-- Hobbies -->
+                    <div class="row interests-section justify-content-center my-3">
+                        <div class="col-6 col-md-3 interest-item">
+                            <div class="interest-icon" tabindex="0"><i class="bi bi-laptop"></i></div>
+                            <div class="interest-text">Desarrollar</div>
+                        </div>
+                        <div class="col-6 col-md-3 interest-item">
+                            <div class="interest-icon" tabindex="0"><i class="bi bi-ticket-perforated"></i></div>
+                            <div class="interest-text">Anime | Series</div>
+                        </div>
+                        <div class="col-6 col-md-3 interest-item">
+                            <div class="interest-icon" tabindex="0"><i class="bi bi-leaf"></i></div>
+                            <div class="interest-text">Plantas</div>
+                        </div>
+                        <div class="col-6 col-md-3 interest-item">
+                            <div class="interest-icon" tabindex="0"><i class="bi bi-dribbble"></i></div>
+                            <div class="interest-text">Deportes</div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
