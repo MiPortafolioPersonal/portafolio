@@ -207,7 +207,8 @@
                                                         <div class="d-flex flex-wrap">
                                                             <span class="tech-badge rounded-pill me-2 mb-2">HTML</span>
                                                             <span class="tech-badge rounded-pill me-2 mb-2">CSS</span>
-                                                            <span class="tech-badge rounded-pill me-2 mb-2">JS</span>
+                                                            <span
+                                                                class="tech-badge rounded-pill me-2 mb-2">JavaScript</span>
                                                             <span
                                                                 class="tech-badge rounded-pill me-2 mb-2">Bootstrap</span>
                                                         </div>
@@ -226,35 +227,62 @@
                                             <!-- Proyecto 2 -->
                                             <div class="col mb-4">
                                                 <div class="card h-100 shadow-lg border-0 rounded-3">
-                                                    <img src="https://placehold.co/600x400/dcdcdc/1d2b53?text=Proyecto+2"
+                                                    <img src="./img/proyecto2.webp"
                                                         alt="Captura de pantalla del Proyecto Web 2"
                                                         class="card-img-top" loading="lazy">
                                                     <div class="card-body d-flex flex-column gap-2">
-                                                        <h4 class="card-title mb-0 secondary fw-bold">Página Web de
-                                                            Gestión de Proyectos</h4>
-                                                        <p class="card-text fs-6 mb-0">Creada para ofrecer servicios
-                                                            sobre la
-                                                            gestión de proyectos.</p>
+                                                        <h4 class="card-title mb-0 secondary fw-bold">Sistema de Gestión
+                                                            de Proyectos</h4>
+                                                        <p class="card-text fs-6 mb-0">Aplicación web con acceso
+                                                            mediante login y
+                                                            asignación de roles desde la base de datos. El administrador
+                                                            puede crear,
+                                                            editar, visualizar y eliminar tareas o proyectos, mientras
+                                                            que el usuario
+                                                            con rol de vista solo puede consultarlos. El sistema
+                                                            incorpora un chatbot
+                                                            con inteligencia artificial, diseñado para responder
+                                                            preguntas y brindar
+                                                            asistencia informativa a los usuarios.</p>
                                                         <div class="d-flex flex-wrap">
-                                                            <span class="tech-badge rounded-pill me-2 mb-2">HTML</span>
-                                                            <span class="tech-badge rounded-pill me-2 mb-2">CSS</span>
-                                                            <span class="tech-badge rounded-pill me-2 mb-2">JS</span>
+                                                            <span class="tech-badge rounded-pill me-2 mb-2">React</span>
                                                             <span
-                                                                class="tech-badge rounded-pill me-2 mb-2">Bootstrap</span>
+                                                                class="tech-badge rounded-pill me-2 mb-2">Tailwind</span>
+                                                            <span
+                                                                class="tech-badge rounded-pill me-2 mb-2">Node.js</span>
+                                                            <span
+                                                                class="tech-badge rounded-pill me-2 mb-2">JavaScript</span>
+                                                            <span class="tech-badge rounded-pill me-2 mb-2">MySQL</span>
                                                         </div>
                                                         <div class="d-flex gap-2 mt-auto justify-content-end">
-                                                            <a href="#"
-                                                                class="btn btn-proyecto d-inline-flex align-items-center justify-content-center"
-                                                                aria-label="Ver sitio al Proyecto de Gestión de Proyectos">
-                                                                <i class="bi bi-link-45deg no-italics-link"
-                                                                    aria-hidden="true"></i>Ver sitio
-                                                            </a>
-                                                            <a href="#"
-                                                                class="btn btn-outline-proyecto d-inline-flex align-items-center justify-content-center"
-                                                                aria-label="Ver Demo del Proyecto de Gestión de Proyectos">
-                                                                <i class="bi bi-play-circle no-italics-link"
-                                                                    aria-hidden="true"></i>Demo
-                                                            </a>
+                                                            <div class="d-flex gap-2 mt-auto justify-content-end">
+                                                                <a href="https://github.com/SistemaDeGestion/sistema_gestion"
+                                                                    target="_blank"
+                                                                    class="btn btn-proyecto d-inline-flex align-items-center justify-content-center"
+                                                                    aria-label="Ver sitio al Proyecto de Gestión de Proyectos">
+                                                                    <i class="bi bi-code me-1"></i>Código
+                                                                </a>                
+                                                                <!-- Botón para abrir el modal -->
+                                                                <button id="openModalmovil"
+                                                                    class="btn btn-outline-proyecto">
+                                                                    <i class="bi bi-play-circle me-1"></i>Ver Demo 
+                                                                </button>
+                                                                <!-- Modal proyecto2 -->
+                                                                <div id="videoModalmovil"
+                                                                    style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.7); z-index:9999; justify-content:center; align-items:center;">
+                                                                    <div>
+                                                                        <button id="closeModalmovil"
+                                                                            style="position:absolute; top:10px; right:15px; font-size:2rem; background:none; border:none; color:#ffffff; cursor:pointer;">&times;</button>
+                                                                        <video id="demoVideoMovil" controls
+                                                                            style="width:100%; max-height:60vh;">
+                                                                            <source src="./img/proyectoDemo2.mp4"
+                                                                                type="video/mp4">
+                                                                            Tu navegador no soporta la reproducción de
+                                                                            video.
+                                                                        </video>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -274,7 +302,8 @@
                                                         <div class="d-flex flex-wrap">
                                                             <span class="tech-badge rounded-pill me-2 mb-2">HTML</span>
                                                             <span class="tech-badge rounded-pill me-2 mb-2">CSS</span>
-                                                            <span class="tech-badge rounded-pill me-2 mb-2">JS</span>
+                                                            <span
+                                                                class="tech-badge rounded-pill me-2 mb-2">JavaScript</span>
                                                             <span
                                                                 class="tech-badge rounded-pill me-2 mb-2">Bootstrap</span>
                                                         </div>
@@ -282,13 +311,13 @@
                                                             <a href="#"
                                                                 class="btn btn-proyecto d-inline-flex align-items-center justify-content-center"
                                                                 aria-label="Ver sitio al Proyecto de Servicios">
-                                                                <i class="bi bi-link-45deg no-italics-link"
+                                                                <i class="bi bi-link-45degme-1 me-1"
                                                                     aria-hidden="true"></i>Ver sitio
                                                             </a>
                                                             <a href="#"
                                                                 class="btn btn-outline-proyecto d-inline-flex align-items-center justify-content-center"
                                                                 aria-label="Ver Demo del Proyecto de Servicios">
-                                                                <i class="bi bi-play-circle no-italics-link"
+                                                                <i class="bi bi-play-circle me-1"
                                                                     aria-hidden="true"></i>Demo
                                                             </a>
                                                         </div>
@@ -320,12 +349,14 @@
                                             <h3 class="fw-bold secondary mr-3">Formación</h3>
                                         </div>
                                         <div class="education-item">
-                                            <h4 class="secondary fw-bold mb-0 mt-3 fs-6">UNIVERSIDAD ALEJANDRO DE HUMBOLDT
+                                            <h4 class="secondary fw-bold mb-0 mt-3 fs-6">UNIVERSIDAD ALEJANDRO DE
+                                                HUMBOLDT
                                             </h4>
                                             <p>Ing. en Informática 2023 - Actual</p>
                                         </div>
                                         <div class="education-item border-style">
-                                            <h4 class="secondary fw-bold mb-0 fs-6">INSTITUTO UNIVERSITARIO DE GERENCIA Y
+                                            <h4 class="secondary fw-bold mb-0 fs-6">INSTITUTO UNIVERSITARIO DE GERENCIA
+                                                Y
                                                 TECNOLOGÍA</h4>
                                             <p class="mb-3">TSU en Informática 2019 - 2022</p>
                                         </div>
@@ -573,8 +604,8 @@
                 </section>
 
                 <!-- Ventana de Proyectos (Escritorio) -->
-                <section class="ventana-opcion2  d-none d-lg-block" id="ventana-opcion2"
-                    aria-label="Lista de Proyectos" tabindex="-1">
+                <section class="ventana-opcion2  d-none d-lg-block" id="ventana-opcion2" aria-label="Lista de Proyectos"
+                    tabindex="-1">
                     <div class="container">
                         <div class="row row-cols-1 g-4 mx-5">
                             <!-- Proyecto 1 -->
@@ -593,14 +624,14 @@
                                         <div class="d-flex flex-wrap">
                                             <span class="tech-badge rounded-pill me-2 mb-2">HTML</span>
                                             <span class="tech-badge rounded-pill me-2 mb-2">CSS</span>
-                                            <span class="tech-badge rounded-pill me-2 mb-2">JS</span>
+                                            <span class="tech-badge rounded-pill me-2 mb-2">JavaScript</span>
                                             <span class="tech-badge rounded-pill me-2 mb-2">Bootstrap</span>
                                         </div>
                                         <div class="d-flex gap-2 mt-auto justify-content-end">
                                             <a href="https://webhogar.github.io/hogar/" target="_blank"
                                                 class="btn btn-proyecto d-inline-flex align-items-center justify-content-center"
                                                 aria-label="Ver sitio al Proyecto de Diseño de Interiores">
-                                                <i class="bi bi-link-45deg no-italics-link" aria-hidden="true"></i>Ver
+                                                <i class="bi bi-link-45deg me-1" aria-hidden="true"></i>Ver
                                                 sitio
                                             </a>
                                         </div>
@@ -610,34 +641,37 @@
 
                             <!-- Proyecto 2 -->
                             <div class="col mb-4">
-                                <div class="card h-100 shadow-lg border-0 rounded-3">
-                                    <img src="https://placehold.co/600x400/dcdcdc/1d2b53?text=Proyecto+2"
-                                        alt="Captura de pantalla del Proyecto Web 2" class="card-img-top"
-                                        loading="lazy">
+                                <div class="card h-100 shadow-lg border-0 rounded-3 ">
+                                    <img src="./img/proyecto2.webp" alt="Captura de pantalla del Proyecto Web 2"
+                                        class="card-img-top" loading="lazy">
                                     <div class="card-body d-flex flex-column gap-2">
-                                        <h4 class="card-title mb-0 secondary fw-bold">Página Web de Gestión de Proyectos
+                                        <h4 class="card-title mb-0 secondary fw-bold mt-3">Sistema de Gestión de
+                                            Proyectos
                                         </h4>
-                                        <p class="card-text fs-6 mb-0">Creada para ofrecer servicios sobre la
-                                            gestión de proyectos.</p>
+                                        <p class="card-text fs-6 mb-0">Aplicación web con acceso mediante login y
+                                            asignación de roles desde la base de datos. El administrador puede crear,
+                                            editar, visualizar y eliminar tareas o proyectos, mientras que el usuario
+                                            con rol de vista solo puede consultarlos. El sistema incorpora un chatbot
+                                            con inteligencia artificial, diseñado para responder preguntas y brindar
+                                            asistencia informativa a los usuarios.</p>
                                         <div class="d-flex flex-wrap">
-                                            <span class="tech-badge rounded-pill me-2 mb-2">HTML</span>
-                                            <span class="tech-badge rounded-pill me-2 mb-2">CSS</span>
-                                            <span class="tech-badge rounded-pill me-2 mb-2">JS</span>
-                                            <span class="tech-badge rounded-pill me-2 mb-2">Bootstrap</span>
+                                            <span class="tech-badge rounded-pill me-2 mb-2">React</span>
+                                            <span class="tech-badge rounded-pill me-2 mb-2">Tailwind</span>
+                                            <span class="tech-badge rounded-pill me-2 mb-2">Node.js</span>
+                                            <span class="tech-badge rounded-pill me-2 mb-2">JavaScript</span>
+                                            <span class="tech-badge rounded-pill me-2 mb-2">MySQL</span>
                                         </div>
                                         <div class="d-flex gap-2 mt-auto justify-content-end">
-                                            <a href="#"
+                                            <a href="https://github.com/SistemaDeGestion/sistema_gestion"
+                                                target="_blank"
                                                 class="btn btn-proyecto d-inline-flex align-items-center justify-content-center"
                                                 aria-label="Ver sitio al Proyecto de Gestión de Proyectos">
-                                                <i class="bi bi-link-45deg no-italics-link" aria-hidden="true"></i>Ver
-                                                sitio
+                                                <i class="bi bi-code me-1"></i>Código
                                             </a>
-                                            <a href="#"
-                                                class="btn btn-outline-proyecto d-inline-flex align-items-center justify-content-center"
-                                                aria-label="Ver Demo del Proyecto de Gestión de Proyectos">
-                                                <i class="bi bi-play-circle no-italics-link"
-                                                    aria-hidden="true"></i>Demo
-                                            </a>
+                                            <!-- Botón para abrir el modal -->
+                                            <button id="openModalBtn" class="btn btn-outline-proyecto">
+                                                <i class="bi bi-play-circle me-1"></i>Ver Demo
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -656,7 +690,7 @@
                                         <div class="d-flex flex-wrap">
                                             <span class="tech-badge rounded-pill me-2 mb-2">HTML</span>
                                             <span class="tech-badge rounded-pill me-2 mb-2">CSS</span>
-                                            <span class="tech-badge rounded-pill me-2 mb-2">JS</span>
+                                            <span class="tech-badge rounded-pill me-2 mb-2">JavaScript</span>
                                             <span class="tech-badge rounded-pill me-2 mb-2">Bootstrap</span>
                                         </div>
                                         <div class="d-flex gap-2 mt-auto justify-content-end">
@@ -669,8 +703,7 @@
                                             <a href="#"
                                                 class="btn btn-outline-proyecto d-inline-flex align-items-center justify-content-center"
                                                 aria-label="Ver Demo del Proyecto de Servicios">
-                                                <i class="bi bi-play-circle no-italics-link"
-                                                    aria-hidden="true"></i>Demo
+                                                <i class="bi bi-play-circle no-italics-link" aria-hidden="true"></i>Demo
                                             </a>
                                         </div>
                                     </div>
@@ -679,7 +712,18 @@
                         </div>
                     </div>
                 </section>
-
+                <!-- Modal proyecto2 -->
+                <div id="videoModal"
+                    style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.7); z-index:9999; justify-content:center; align-items:center;">
+                    <div>
+                        <button id="closeModalBtn"
+                            style="position:absolute; top:10px; right:15px; font-size:2rem; background:none; border:none; color:#ffffff; cursor:pointer;">&times;</button>
+                        <video id="demoVideo" controls style="width:100%; max-height:60vh;">
+                            <source src="./img/proyectoDemo2.mp4" type="video/mp4">
+                            Tu navegador no soporta la reproducción de video.
+                        </video>
+                    </div>
+                </div>
                 <!-- Ventana de Experiencia (Escritorio) -->
                 <section class="ventana-opcion3 d-none d-lg-block" id="ventana-opcion3"
                     aria-label="Detalle de Experiencia y Formación" tabindex="-1">
@@ -692,7 +736,8 @@
                             <p>Ing. en Informática 2023 - Actual</p>
                         </div>
                         <div class="education-item border-style">
-                            <h4 class="secondary fw-bold mb-0 fs-5">INSTITUTO UNIVERSITARIO DE GERENCIA Y TECNOLOGÍA</h4>
+                            <h4 class="secondary fw-bold mb-0 fs-5">INSTITUTO UNIVERSITARIO DE GERENCIA Y TECNOLOGÍA
+                            </h4>
                             <p class="mb-3">TSU en Informática 2019 - 2022</p>
                         </div>
                         <div class="timeline">
@@ -722,7 +767,6 @@
                         </div>
                     </div>
                 </section>
-
                 <!-- Ventana de Sobre mí (Escritorio) -->
                 <section class="ventana-opcion4 container  d-none d-lg-block" id="ventana-opcion4"
                     aria-label="Información sobre mí" tabindex="-1">
@@ -792,5 +836,4 @@
     <!-- Custom JavaScript -->
     <script src="script.js"></script>
 </body>
-
 </html>

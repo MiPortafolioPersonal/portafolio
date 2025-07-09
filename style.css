@@ -626,6 +626,10 @@ i.primary {
     object-fit: cover; /* Asegura que las imágenes cubran el área */
 }
 
+.card-body {
+    border-top: 1px solid #dcdcdc;
+}
+
 .tech-badge {
     background-color: #dcdcdc87;
     color: #1d2b53;
@@ -665,6 +669,21 @@ i.primary {
 
 .no-italics-link {
     font-style: normal; /* Elimina la cursiva de los iconos dentro de los enlaces */
+}
+
+/* Estilos para el modal */
+#modal-toggle {
+  display: none;
+}
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.7);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
 }
 
 /* /////////////////////////////////////////////////////////

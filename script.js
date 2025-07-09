@@ -118,3 +118,40 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+// Mostrar el modal
+document.getElementById('openModalBtn').onclick = function () {
+    document.getElementById('videoModal').style.display = 'flex';
+    document.getElementById('demoVideo').play();
+};
+// Cerrar el modal
+document.getElementById('closeModalBtn').onclick = function () {
+    document.getElementById('videoModal').style.display = 'none';
+    document.getElementById('demoVideo').pause();
+};
+// Cerrar modal haciendo clic fuera del contenido
+document.getElementById('videoModal').onclick = function (e) {
+    if (e.target === this) {
+        this.style.display = 'none';
+        document.getElementById('demoVideo').pause();
+    }
+};
+
+// ---- MODAL MOVIL ----
+document.getElementById('openModalmovil').onclick = function () {
+    document.getElementById('videoModalmovil').style.display = 'flex';
+    document.getElementById('demoVideoMovil').currentTime = 0;
+    document.getElementById('demoVideoMovil').play();
+};
+
+document.getElementById('closeModalmovil').onclick = function () {
+    document.getElementById('videoModalmovil').style.display = 'none';
+    document.getElementById('demoVideoMovil').pause();
+};
+
+document.getElementById('videoModalmovil').onclick = function (e) {
+    if (e.target === this) {
+        this.style.display = 'none';
+        document.getElementById('demoVideoMovil').pause();
+    }
+};
