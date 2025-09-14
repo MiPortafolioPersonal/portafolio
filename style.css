@@ -146,50 +146,51 @@ body {
 
 /* Navegación lateral (escritorio) */
 .nav-item-custom {
-    display: flex;
-    align-items: center;
-    padding: 1rem 1.5rem;
-    margin-bottom: 1rem;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    width: fit-content; /* Ajusta el ancho al contenido */
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  width: fit-content;
 }
 
+/* Texto */
 .nav-text {
-    transition: font-size 0.3s, transform 0.3s ease;
-}
-
-.nav-item-custom:hover .icon_style,
-.nav-item-custom:focus .icon_style {
-    font-size: larger;
-    transform: translateX(5px);
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-}
-
-.nav-item-custom:hover .nav-text,
-.nav-item-custom:focus .nav-text {
-    font-size: larger;
-    transform: translateX(5px);
+  transition: font-size 0.3s ease, transform 0.3s ease;
 }
 
 /* Iconos circulares */
 .icon_style {
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 15px;
-    background-color: #b2a4ff;
-    transition: width 0.3s ease, height 0.3s ease;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  background-color: #b2a4ff;
+  transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+}
+
+/* Estados hover/focus */
+.nav-item-custom:hover .icon_style,
+.nav-item-custom:focus .icon_style {
+  transform: translateX(5px) scale(1.1);
+  width: 5.5rem;
+  height: 5.5rem;
+}
+
+.nav-item-custom:hover .nav-text,
+.nav-item-custom:focus .nav-text {
+  /* font-size: 1.1rem;  */
+  transform: translateX(5px);
 }
 
 i.primary {
-    background-color: #dcdcdc;
+  background-color: #dcdcdc;
 }
+
 
 /* Ventanas laterales (escritorio) */
 .ventana-opcion1,
