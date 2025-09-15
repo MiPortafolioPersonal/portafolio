@@ -897,3 +897,10 @@ i.primary {
         padding: 2rem 4rem; /* Ajusta el padding para estas secciones */
     }
 }
+
+/* .accordion-button::after {
+    margin-left: auto;
+    content: "";
+    background-image: var();
+}
+ */
