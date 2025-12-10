@@ -35,7 +35,7 @@ body {
 }
 
 .tertiary {
-    color: #c5bded; /* Color terciario (acento) */
+    color: #b7aafd; /* Color terciario (acento) */
 }
 
 .border-style {
@@ -112,7 +112,7 @@ body {
     width: 250px; /* Tamaño más adecuado para móvil */
     height: 250px; /* Tamaño más adecuado para móvil */
     border-radius: 50%;
-    background: #c5bded;
+    background: #b7aafd;
     padding: 5px;
     display: flex;
     justify-content: center;
@@ -139,7 +139,7 @@ body {
 
 .social-icons .social-icon-link:hover,
 .social-icons .social-icon-link:focus {
-    color: #c5bded;
+    color: #b7aafd;
     transform: translateY(-3px);
     outline: none;
 }
@@ -169,7 +169,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-right: 15px;
-  background-color: #c5bded;
+  background-color: #b7aafd;
   transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
 }
 
@@ -284,7 +284,7 @@ i.primary {
 }
 
 .skill-bubble {
-    background-color: #c5bded;
+    background-color: #b7aafd;
     padding: 12px 25px;
     border-radius: 9999px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -423,7 +423,7 @@ i.primary {
 
 /* Badge de desarrollador */
 .web-developer-badge {
-    background-color: #c5bded;
+    background-color: #b7aafd;
     padding: 8px 15px;
     border-radius: 20px;
     color: #1d2b53; /* Color de texto para el badge */
@@ -475,8 +475,8 @@ i.primary {
 .interest-icon:hover,
 .interest-icon:focus {
     color: #1d2b53;
-    background-color: #c5bded;
-    border-color: #c5bded;
+    background-color: #b7aafd;
+    border-color: #b7aafd;
     outline: none;
     transform: translateY(-3px);
 }
@@ -561,7 +561,7 @@ i.primary {
 
 /* Botones y badges */
 .download-cv-button {
-    background-color: #c5bded;
+    background-color: #b7aafd;
     color: #1d2b53;
     padding: 5px 15px;
     border-radius: 30px;
@@ -649,7 +649,7 @@ i.primary {
 
 .btn-proyecto:hover,
 .btn-proyecto:focus {
-    background-color: #c5bded;
+    background-color: #b7aafd;
     color: #1d2b53;
     outline: none;
 }
@@ -662,8 +662,8 @@ i.primary {
 
 .btn-outline-proyecto:hover,
 .btn-outline-proyecto:focus {
-    border-color: #c5bded;
-    color: #c5bded;
+    border-color: #b7aafd;
+    color: #b7aafd;
     background-color: transparent; /* Asegura que no tenga fondo al hacer hover */
     outline: none;
 }
